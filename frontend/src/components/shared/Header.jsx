@@ -106,57 +106,75 @@ function Header(props) {
       <CssBaseline />
       <HideOnScroll {...props}>
         <Box sx={{ flexGrow: 1 }}>
-          <AppBar
-            component="nav"
-            position="static"
-            color="transparent"
-            sx={{
-              boxShadow: "none",
-            }}
-          >
-            <Toolbar>
+          <AppBar component="nav" position="static" color="transparent">
+            <Toolbar
+              sx={{
+                height: "75px",
+              }}
+            >
               <Box
                 component="div"
                 sx={{
                   flexGrow: 1,
                   ml: "7%",
+                  display : "flex",
+                  flexDirection:"row",
+                  alignItems:"center"
                 }}
               >
                 <Box
                   component="img"
                   sx={{
-                    height: 150,
-                    paddingTop: 2,
+                    height: 75,
+                    paddingTop: 1,
                     maxHeight: { xs: 233, md: 167 },
                     maxWidth: { xs: 350, md: 250 },
                   }}
                   alt="Logo"
                   src={images.Logo}
-                />
+                />          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href="#app-bar-with-responsive-menu"
+            sx={{
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
+              fontWeight: 700,
+              color: 'inherit',
+              textDecoration: 'none',
+              pl: 3,
+            }}
+          >
+            Panacea Karate Academy
+          </Typography>
               </Box>
+
+
+        
               <Box
                 sx={{
-                  display: { xs: "none", sm: "none", md: "block" },
-                  p: 5,
+                  display: { sm: "none", md: "block" },
+                  p: 0,
                   mr: "7%",
+                  height: "75px",
                 }}
               >
                 {navItems.map((item) => (
                   <Button
                     key={item}
                     sx={{
-                      backgroundColor: "#9d4f4b",
-                      color: "white",
+                      backgroundColor: "#fff",
+                      color: "#000",
                       textTransform: "none",
                       fontWeight: "bold",
-                      fontSize: {md :15, lg : 18},
-                      borderRadius: 2,
-                      width: {md :"100px", lg : "130px"},
-                      mx: 1,
-                      boxShadow: 1,
+                      fontSize: { md: 15, lg: 18 },
+                      borderRadius: 0,
+                      width: { md: "90px", lg: "130px" },
+                      height: { md: "100%" },
                       ":hover": {
-                        backgroundColor: "#fff",
-                        color: "#9d4f4b",
+                        backgroundColor: "#9d4f4b",
+                        color: "#fff",
                       },
                     }}
                   >
