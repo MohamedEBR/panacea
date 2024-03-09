@@ -17,10 +17,17 @@ import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import images from "../../constants/images";
+import { Link } from "react-router-dom";
 
 const navItems = ["Home", "About", "Programs", "Contact"];
 const drawerWidth = 300;
 
+const returnNavItem = (item) => {
+  if (item == "Home") {
+    return "";
+  }
+  return item;
+};
 function HideOnScroll(props) {
   const { children, window } = props;
   // Note that you normally won't need to set the window ref as useScrollTrigger
@@ -90,7 +97,11 @@ function Header(props) {
                 },
               }}
             >
+              <Link to={`/${returnNavItem(item).toLocaleLowerCase()}`}
+              style={{textDecoration: 'none', color: 'inherit'}}>
               <ListItemText primary={item} />
+
+              </Link>
             </ListItemButton>
           </ListItem>
         ))}
@@ -108,77 +119,113 @@ function Header(props) {
         <Box sx={{ flexGrow: 1 }}>
           <AppBar component="nav" position="static" color="transparent">
             <Toolbar
+              style={{ paddingLeft: 0 }}
               sx={{
                 height: "75px",
+                backgroundColor: { sm: "#fff", md: "#9d4f4b" },
               }}
             >
               <Box
                 component="div"
                 sx={{
                   flexGrow: 1,
-                  ml: "7%",
-                  display : "flex",
-                  flexDirection:"row",
-                  alignItems:"center"
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  backgroundColor: "#fff",
                 }}
               >
                 <Box
-                  component="img"
+                  component="div"
                   sx={{
-                    height: 75,
-                    paddingTop: 1,
-                    maxHeight: { xs: 233, md: 167 },
-                    maxWidth: { xs: 350, md: 250 },
+                    flexGrow: 1,
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    transform: "skew(-20deg)",
+                    backgroundColor: "#fff",
+                    pl: "12%",
                   }}
-                  alt="Logo"
-                  src={images.Logo}
-                />          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontWeight: 700,
-              color: 'inherit',
-              textDecoration: 'none',
-              pl: 3,
-            }}
-          >
-            Panacea Karate Academy
-          </Typography>
+                >
+                  {/* <Link to="/"> */}
+                  <Box
+                    component="img"
+                    sx={{
+                      height: 75,
+                      paddingTop: 1,
+                      maxHeight: { xs: 233, md: 167 },
+                      maxWidth: { xs: 350, md: 250 },
+                      transform: "skew(20deg)",
+                    }}
+                    alt="Logo"
+                    src={images.Logo}
+                  />
+                  {/* </Link> */}
+                  <Link
+                    to="/"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    <Typography
+                      variant="h5"
+                      noWrap
+                      sx={{
+                        mr: 2,
+                        display: "flex",
+                        fontWeight: 700,
+                        color: "inherit",
+                        textDecoration: "none",
+                        fontFamily: '"Saira Semi Condensed"',
+                        pl: 3,
+                        transform: "skew(20deg)",
+                      }}
+                    >
+                      Panacea Karate Academy
+                    </Typography>
+                  </Link>
+                </Box>
               </Box>
 
-
-        
               <Box
                 sx={{
-                  display: { sm: "none", md: "block" },
+                  display: { xs: "none", sm: "none", md: "block" },
                   p: 0,
                   mr: "7%",
                   height: "75px",
+                  backgroundColor: "#9d4f4b",
                 }}
               >
                 {navItems.map((item) => (
                   <Button
                     key={item}
                     sx={{
-                      backgroundColor: "#fff",
-                      color: "#000",
+                      backgroundColor: "#9d4f4b",
+                      color: "#fff",
                       textTransform: "none",
-                      fontWeight: "bold",
-                      fontSize: { md: 15, lg: 18 },
+                      fontSize: { md: 14, lg: 16 },
                       borderRadius: 0,
                       width: { md: "90px", lg: "130px" },
                       height: { md: "100%" },
+                      transform: "skew(-20deg)",
+
                       ":hover": {
-                        backgroundColor: "#9d4f4b",
-                        color: "#fff",
+                        backgroundColor: "#fff",
+                        color: "#9d4f4b",
                       },
                     }}
                   >
-                    {item}
+                    <Typography
+                      sx={{
+                        transform: "skew(20deg)",
+                        fontFamily: '"Saira Semi Condensed"',
+                      }}
+                    >
+                      <Link
+                        to={`/${returnNavItem(item).toLocaleLowerCase()}`}
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        {item}
+                      </Link>
+                    </Typography>
                   </Button>
                 ))}
               </Box>
@@ -216,6 +263,10 @@ function Header(props) {
           </nav>
         </Box>
       </HideOnScroll>
+      <style>
+        @import
+        url("https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap")
+      </style>
     </React.Fragment>
   );
 }
