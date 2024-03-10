@@ -97,10 +97,11 @@ function Header(props) {
                 },
               }}
             >
-              <Link to={`/${returnNavItem(item).toLocaleLowerCase()}`}
-              style={{textDecoration: 'none', color: 'inherit'}}>
-              <ListItemText primary={item} />
-
+              <Link
+                to={`/${returnNavItem(item).toLocaleLowerCase()}`}
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <ListItemText primary={item} />
               </Link>
             </ListItemButton>
           </ListItem>
@@ -263,10 +264,6 @@ function Header(props) {
           </nav>
         </Box>
       </HideOnScroll>
-      <style>
-        @import
-        url("https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap")
-      </style>
     </React.Fragment>
   );
 }
