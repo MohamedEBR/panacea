@@ -16,8 +16,9 @@ const Home = () => {
           flexDirection: "row",
           justifyContent: "space-between",
           width: "100%",
-          height: "669px",
+          height: {xs :"100%",sm : "100%",md: "90vh", lg: "669px"},
           overflow: "hidden",
+          mb: 10,
         }}
       >
         <Box
@@ -51,7 +52,7 @@ const Home = () => {
                 sx={{
                   fontFamily: '"Saira Semi Condensed"',
                   fontWeight: 700,
-                  pt: 5,
+                  pt: {xs: 10, sm: 5,md: 5,lg: 5},
                 }}
               >
                 Build Inner Strength and Confidence
@@ -113,7 +114,7 @@ const Home = () => {
             <Box
               component="img"
               sx={{
-                height: "669px",
+                height: {xs :0,sm :0,md :"669px"},
                 zIndex: -2,
                 objectFit: "cover",
                 objectPosition: "50% 100%",
@@ -128,7 +129,7 @@ const Home = () => {
         component="div"
         sx={{
           width: "100%",
-          py: "10%",
+          py: 5,
           display: "flex",
           flexDirection: "column",
           backgroundColor: "white",

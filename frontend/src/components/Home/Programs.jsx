@@ -13,7 +13,8 @@ const Programs = () => {
           fontFamily: '"Saira Semi Condensed"',
           color: "#9d4f4b",
           px: "7%",
-          mb: 3,
+
+          my: 3,
         }}
       >
         Our Programs
@@ -21,42 +22,48 @@ const Programs = () => {
       <Box
         component="div"
         sx={{
-          width: "105vw",
+          width: {md: "100%", lg :"105vw"},
           height: "90vh",
           display: "flex",
+          flexDirection: {md: "column", lg: "row"},
           backgroundColor: "#fff",
         }}
       >
         <Box
           component="div"
           sx={{
-            width: "33.6%",
-            clipPath: "polygon(0 0, calc(100% - 10vh) 0, 100% 100%, 0 100%)",
+            width: {md: "33%", lg :"33.6%"},
+            clipPath: {md: "none", lg : "polygon(0 0, calc(100% - 10vh) 0, 100% 100%, 0 100%)"},
             WebkitClipPath:
-              "polygon(0 0, calc(100% - 10vh) 0, 100% 100%, 0 100%)",
-            marginRight: "-4.2vh",
-            padding: "5px 11vh 5px 5px",
+              {mf: "none", lg : "polygon(0 0, calc(100% - 10vh) 0, 100% 100%, 0 100%)"},
+            marginRight: {md : 0, lg :"-4.2vh"},
+            padding: {md : "0", lg : "5px 11vh 5px 5px"},
             textAlign: "center",
-            backgroundColor: "#000104",
+            backgroundColor: {md : "transparent", lg :"#000104"},
             transition: "transform .5s",
             ":hover": {
               transform: "scale(1.05)",
-              backgroundColor: "#100140",
+              backgroundColor: {md : "transparent", lg :"#000140"},
             },
           }}
         >
+          {/* <Typography
+          sx={{
+            color: "#fff",
+          }}>
+            Hello, How are you today
+          </Typography> */}
           <Box
             component="img"
             sx={{
-              width: "40vw",
-              height: "101%",
-              borderRadius: "10%",
+              width: {md : "100%",lg :"40vw"},
+              height: {md: "100%", lg: "101%"},
               objectFit: "cover",
               objectPosition: "center",
               position: "relative",
               filter: "brightness(50%)",
-              right: "10%",
-              transition: "transform 1s",
+              right: {md: 0, lg: "10%"},
+              transition: "transform .5s",
               ":hover": {
                 filter: "brightness(100%)",
               },
@@ -69,17 +76,17 @@ const Programs = () => {
         <Box
           component="div"
           sx={{
-            width: "35%",
+            width: {md : "33%", lg: "35%"},
             clipPath:
-              "polygon(0 0, calc(100% - 10vh) 0, 100% 100%, calc(0% + 10vh) 100%)",
+              {md: "none", lg :"polygon(0 0, calc(100% - 10vh) 0, 100% 100%, calc(0% + 10vh) 100%)"},
             WebkitClipPath:
-              "polygon(0 0, calc(100% - 10vh) 0, 100% 100%, calc(0% + 10vh) 100%)",
-            marginLeft: "-4.2vh",
-            marginRight: "-4.2vh",
-            padding: "1px 5px 1px 11vh",
+              {md: "none", lg :"polygon(0 0, calc(100% - 10vh) 0, 100% 100%, calc(0% + 10vh) 100%)"},
+            marginLeft: {md: 0, lg: "-4.2vh"},
+            marginRight: {md : 0,lg :"-4.2vh"},
+            padding: {md : 0, lg :"1px 5px 1px 11vh"},
             textAlign: "center",
 
-            transition: "transform .2s",
+            transition: "transform .5s",
             ":hover": {
               transform: "scale(1.05)",
             },
@@ -88,13 +95,13 @@ const Programs = () => {
           <Box
             component="img"
             sx={{
-              width: "40vw",
+              width: {md : "100%", lg :"40vw"},
               height: "100%",
               objectFit: "cover",
               objectPosition: "center",
               position: "relative",
               filter: "brightness(50%)",
-              right: "20%",
+              right: {md: 0, lg :"20%"},
               transition: "transform 1s",
               ":hover": {
                 filter: "brightness(100%)",
@@ -107,14 +114,14 @@ const Programs = () => {
         <Box
           component="div"
           sx={{
-            width: "33.6%",
-            clipPath: "polygon(0 0, 100% 0, 100% 100%, calc(0% + 10vh) 100%)",
+            width: {md : "33%", lg : "33.6%"},
+            clipPath: {md: "none", lg :"polygon(0 0, 100% 0, 100% 100%, calc(0% + 10vh) 100%)"},
             WebkitClipPath:
-              "polygon(0 0, 100% 0, 100% 100%, calc(0% + 10vh) 100%)",
-            marginLeft: "-4.2vh",
-            padding: "1px 5px 1px 11vh",
+              {md:"none", lg :"polygon(0 0, 100% 0, 100% 100%, calc(0% + 10vh) 100%)"},
+            marginLeft: {md : 0, lg : "-4.2vh"},
+            padding: {md : 0, lg: "1px 5px 1px 11vh"},
             textAlign: "center",
-            transition: "transform .2s",
+            transition: "transform .5s",
             ":hover": {
               transform: "scale(1.05)",
             },
@@ -123,15 +130,13 @@ const Programs = () => {
           <Box
             component="img"
             sx={{
-              width: "40vw",
-              height: "101%",
-              borderRadius: "10%",
+              width: {md : "100%", lg :"40vw"},
+              height: {md : "100%", lg : "101%"},
               objectFit: "cover",
               objectPosition: "center",
               position: "relative",
               filter: "brightness(50%)",
-              right: "30%",
-              boxShadow: "0 0 15px 10px #141414",
+              right: {md :0, lg : "30%"},
               transition: "transform 1s",
               ":hover": {
                 filter: "brightness(100%)",

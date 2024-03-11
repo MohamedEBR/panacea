@@ -9,23 +9,23 @@ const About = () => {
     <Box
       component="div"
       sx={{
-        flexDirection: "row",
+        flexDirection: {xs : "column",sm : "column",lg :"row"},
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-between",
-        height: "100vh",
-        pb: "10%",
+        justifyContent: {xs : "center", sm : "center", md : "space-between"},
+        height: {md :"100vh"},
+        pb: 5,
         px: "7%",
       }}
     >
       <Box
         component="div"
         sx={{
-          textAlign: "start",
+          textAlign: {xs : "center", sm : "center", md :"start"},
           flexDirection: "column",
           display: "flex",
-          justifyContent: "flex-start",
-          alignItems: "start",
+          justifyContent: {xs : "center", sm : "center", md :"flex-start"},
+          alignItems: {xs : "center", sm : "center", md :"start"},
           width: "100%",
         }}
       >
@@ -94,15 +94,15 @@ const About = () => {
       </Box>
       <Box
         sx={{
-          width: "80%",
-          pl: 5,
+          width: {xs: "100%", sm: "100%", md :"80%"},
+          pl: {xs: 0,sm: 0, md : 5},
           pt: 5,
         }}
       >
         <Box
           component="img"
           sx={{
-            width: "90%",
+            width: {xs : "100%",sm : "100%",md :"90%"},
             height: "500px",
             objectFit: "none",
             objectPosition: "center",
