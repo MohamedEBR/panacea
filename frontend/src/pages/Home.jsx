@@ -4,6 +4,8 @@ import Typography from "@mui/material/Typography";
 import images from "../constants/images";
 import Button from "@mui/material/Button";
 import SportsMartialArtsSharpIcon from "@mui/icons-material/SportsMartialArtsSharp";
+import { About, Programs, Contact } from "../components/Home";
+
 const Home = () => {
   return (
     <Fragment>
@@ -21,14 +23,14 @@ const Home = () => {
         <Box
           sx={{
             backgroundColor: "white",
-            width: {sm : "300px", md : "400px", lg:"500px"},
+            width: { sm: "100%", md: "400px", lg: "500px" },
           }}
         >
           <Box
             sx={{
               backgroundColor: "white",
               transform: { sm: "none", md: "skew(-20deg)" },
-              width: {md : "355px",lg: "455px"},
+              width: { md: "355px", lg: "455px" },
               height: "100%",
               ml: { xs: 8, sm: 8, md: 35 },
             }}
@@ -40,7 +42,7 @@ const Home = () => {
                 textAlign: "start",
                 // backgroundColor: "white",
                 width: { sm: "100%", md: "600px" },
-                left: { md: "-175px" },
+                left: { md: "-240px", lg: "-175px" },
                 top: { md: "20%" },
               }}
             >
@@ -97,7 +99,7 @@ const Home = () => {
         </Box>
         <Box
           sx={{
-            width: "60%",
+            width: { xs: "0px", sm: "0px", md: "60%" },
             zIndex: -2,
             display: { xs: "none", sm: "none", md: "block" },
           }}
@@ -121,6 +123,21 @@ const Home = () => {
             />
           </Box>
         </Box>
+      </Box>
+      <Box
+        component="div"
+        sx={{
+          width: "100%",
+          py: "10%",
+          display: "flex",
+          flexDirection: "column",
+          backgroundColor: "white",
+          overflow: "hidden",
+        }}
+      >
+        <About />
+        <Programs />
+        <Contact />
       </Box>
     </Fragment>
   );
