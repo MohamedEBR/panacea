@@ -1,8 +1,14 @@
-import Logo from '../assets/logo.png'
-import banner from '../assets/banner.jpg'
-import karimNats2medals from '../assets/karimpostNationals.jpg'
+import Logo from "../assets/logo.png";
+import banner from "../assets/banner.jpg";
+import karimNats2medals from "../assets/karimpostNationals.jpg";
+import beginner from "../assets/yellowbelt.jpg";
+import elite from "../assets/blackbelt.jpg";
+import international from "../assets/field.jpg";
 export default {
-    Logo,
-    banner,
-    karimNats2medals
-}
+  Logo,
+  banner,
+  karimNats2medals,
+  beginner,
+  elite,
+  international,
+};
