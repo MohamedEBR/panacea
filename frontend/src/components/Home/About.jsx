@@ -13,8 +13,9 @@ const About = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: {xs : "center", sm : "center", md : "space-between"},
-        height: {md :"100vh"},
+        height: {lg :"100vh"},
         pb: 5,
+        mb: 5,
         px: "7%",
       }}
     >
