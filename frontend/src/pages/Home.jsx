@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import images from "../constants/images";
 import Button from "@mui/material/Button";
 import SportsMartialArtsSharpIcon from "@mui/icons-material/SportsMartialArtsSharp";
-import { About, Programs, Contact } from "../components/Home";
+import { About, Programs, Instructors, Contact } from "../components/Home";
 import { CustomBox } from "../components/shared/CustomBox";
 
 const Home = () => {
@@ -148,6 +148,7 @@ const Home = () => {
             flexDirection: "row",
             justifyContent: "start",
             alignItems: "center",
+            textAlign: {xs : "center", sm : "center", md: "center", lg : "start"},
           }}
         >
           <Box
@@ -217,6 +218,7 @@ const Home = () => {
             src={images.logo_white}
           />
         </CustomBox>
+        <Instructors />
         <Contact />
       </Box>
     </Fragment>
