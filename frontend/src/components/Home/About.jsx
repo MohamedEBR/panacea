@@ -2,6 +2,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import images from "../../constants/images";
+import {Link} from "react-router-dom";
 
 import "./index.scss";
 const About = () => {
@@ -67,6 +68,8 @@ const About = () => {
           supportive community, we celebrate every achievement, transforming
           students into well-rounded champions ready to meet any challenge.
         </Typography>
+        <Link
+        to="/about">
         <Button
           variant="contained"
           size="medium"
@@ -92,6 +95,8 @@ const About = () => {
             Learn more
           </Typography>
         </Button>
+        </Link>
+       
       </Box>
       <Box
         sx={{

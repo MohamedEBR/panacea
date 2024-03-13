@@ -5,6 +5,7 @@ import images from "../constants/images";
 import Button from "@mui/material/Button";
 import SportsMartialArtsSharpIcon from "@mui/icons-material/SportsMartialArtsSharp";
 import { About, Programs, Contact } from "../components/Home";
+import { CustomBox } from "../components/shared/CustomBox";
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
           flexDirection: "row",
           justifyContent: "space-between",
           width: "100%",
-          height: {xs :"100%",sm : "100%",md: "90vh", lg: "669px"},
+          height: { xs: "100%", sm: "100%", md: "90vh", lg: "669px" },
           overflow: "hidden",
           mb: 10,
         }}
@@ -52,7 +53,7 @@ const Home = () => {
                 sx={{
                   fontFamily: '"Saira Semi Condensed"',
                   fontWeight: 700,
-                  pt: {xs: 10, sm: 5,md: 5,lg: 5},
+                  pt: { xs: 10, sm: 5, md: 5, lg: 5 },
                 }}
               >
                 Build Inner Strength and Confidence
@@ -114,7 +115,7 @@ const Home = () => {
             <Box
               component="img"
               sx={{
-                height: {xs :0,sm :0,md :"669px"},
+                height: { xs: 0, sm: 0, md: "669px" },
                 zIndex: -2,
                 objectFit: "cover",
                 objectPosition: "50% 100%",
@@ -138,6 +139,84 @@ const Home = () => {
       >
         <About />
         <Programs />
+        <CustomBox
+          sx={{
+            p: "3% 7%",
+            my: 10,
+            boxShadow: 3,
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "start",
+            alignItems: "center",
+          }}
+        >
+          <Box
+            component="div"
+            sx={{
+              width: "65%",
+              mr : 8,
+            }}
+          >
+            <Typography
+              variant="h6"
+              sx={{
+                fontFamily: '"Saira Semi Condensed"',
+                color: "#fff",
+                my: 3,
+              }}
+            >
+              Class Schedule
+            </Typography>
+            <Typography
+              variant="h4"
+              sx={{
+                my: 3,
+                width: "100%",
+              }}
+            >
+              Kickstart your fitness journey in high gear! Sample a variety of
+              martial arts this week and discover the perfect fit for your
+              goals.
+            </Typography>
+            <Button
+              variant="contained"
+              size="medium"
+              sx={{
+                my: 3,
+                width: { sm: "150px", md: "200px" },
+                height: { xs: "40px", sm: "50px", md: "60px" },
+                borderRadius: 0,
+                backgroundColor: "#fff",
+                color: "#9d4f4b",
+                ":hover": {
+                  backgroundColor: "#9d4f4b",
+                  color: "#fff",
+                },
+              }}
+            >
+              <Typography
+                variant="h6"
+                sx={{
+                  fontFamily: '"Saira Semi Condensed"',
+                  fontWeight: 500,
+                }}
+              >
+                Schedule
+              </Typography>
+            </Button>
+          </Box>
+          <Box
+            component="img"
+            sx={{
+              width: "20%",
+              height: "auto",
+              boxShadow: 5,
+              borderRadius: "50%",
+            }}
+            alt="logo"
+            src={images.logo_white}
+          />
+        </CustomBox>
         <Contact />
       </Box>
     </Fragment>

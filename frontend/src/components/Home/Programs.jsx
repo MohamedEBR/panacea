@@ -1,6 +1,8 @@
 import Box from "@mui/material/Box";
 import { Fragment } from "react";
 import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 import images from "../../constants/images";
 import "./index.scss";
 
@@ -23,7 +25,7 @@ const Programs = () => {
         component="div"
         sx={{
           width: { lg: "105vw" },
-          height: { md: "90vh", lg: "100vh" },
+          height: { md: "90vh", lg: "70vh" },
           display: "flex",
           alignItems: { xs: "center", sm: "center", md: "start", lg: "start" },
           justifyContent: {
@@ -46,7 +48,7 @@ const Programs = () => {
           component="div"
           sx={{
             width: { xs: "100%", sm: "100%", md: "100%", lg: "33.6%" },
-            height: "75%",
+            height: "100%",
             clipPath: {
               md: "none",
               lg: "polygon(0 0, calc(100% - 10vh) 0, 100% 100%, 0 100%)",
@@ -139,7 +141,7 @@ const Programs = () => {
           component="div"
           sx={{
             width: { xs: "100%", sm: "100%", md: "100%", lg: "35%" },
-            height: "75%",
+            height: "100%",
             position: "relative",
             clipPath: {
               md: "none",
@@ -231,7 +233,7 @@ const Programs = () => {
           component="div"
           sx={{
             width: { xs: "100%", sm: "100%", md: "100%", lg: "33.6%" },
-            height: "75%",
+            height: "100%",
             position: "relative",
             clipPath: {
               md: "none",
@@ -318,7 +320,46 @@ const Programs = () => {
             </Box>
           </Box>
         </Box>
+        
       </Box>
+      <Box
+      sx={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}>
+        <Link
+        to="/programs">
+        <Button
+          variant="contained"
+          size="medium"
+          sx={{
+            mt: 3,
+            width: { sm: "175px", md: "225px" },
+            height: { xs: "40px", sm: "50px", md: "60px" },
+            borderRadius: 0,
+            backgroundColor: "#9d4f4b",
+            ":hover": {
+              backgroundColor: "#fff",
+              color: "#9d4f4b",
+            },
+          }}
+        >
+          <Typography
+            variant="h6"
+            sx={{
+              fontFamily: '"Saira Semi Condensed"',
+              fontWeight: 500,
+            }}
+          >
+            Discover More
+          </Typography>
+        </Button>
+        </Link>
+        
+      </Box>
+     
     </Fragment>
   );
 };

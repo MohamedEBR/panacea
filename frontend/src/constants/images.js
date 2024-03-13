@@ -4,6 +4,7 @@ import karimNats2medals from "../assets/karimpostNationals.jpg";
 import beginner from "../assets/yellowbelt.jpg";
 import elite from "../assets/blackbelt.jpg";
 import international from "../assets/field.jpg";
+import logo_white from "../assets/logo-white-modified.png";
 export default {
   Logo,
   banner,
@@ -11,4 +12,5 @@ export default {
   beginner,
   elite,
   international,
+  logo_white,
 };
