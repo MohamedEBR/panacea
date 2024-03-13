@@ -38,7 +38,7 @@ const Programs = () => {
             md: "row",
             lg: "row",
           },
-          px: {xs : "5%",sm : "5%",md :0},
+          px: { xs: "5%", sm: "5%", md: 0 },
           backgroundColor: "#fff",
         }}
       >
@@ -60,7 +60,7 @@ const Programs = () => {
             textAlign: "center",
             position: "relative",
             transition: "transform .3s",
-            
+
             ":hover": {
               transform: "scale(1.05)",
             },
@@ -88,7 +88,7 @@ const Programs = () => {
                 transform: "translate(-50%, -50%)",
                 fontFamily: '"Saira Semi Condensed"',
               },
-              div : {
+              div: {
                 visibility: "hidden",
               },
               ":hover": {
@@ -99,32 +99,40 @@ const Programs = () => {
                 h2: {
                   visibility: "hidden",
                 },
-                div : {
+                div: {
                   visibility: "visible",
-                }
+                },
               },
             }}
           >
             <Box component="img" alt="Logo" src={images.beginner} />
             <Typography variant="h2">Beginner</Typography>
             <Box
-            component="div"
-            sx={{
-              h3: {
-                color: "#fff",
-                position: "absolute",
-                width: "100%",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                fontFamily: '"Saira Semi Condensed"',
-              }
-            }}>
-              <Typography variant="h3">Hello World</Typography>
+              component="div"
+              sx={{
+                h6: {
+                  color: "#fff",
+                  position: "absolute",
+                  width: "100%",
+                  top: "50%",
+                  px: {xs : 2, sm : 2,md : 2, lg : 7},
+                  left: { xs: "50%", sm: "50%", md: "50%", lg: "45%" },
+                  transform: "translate(-50%, -50%)",
+                  fontFamily: '"Saira Semi Condensed"',
+                },
+              }}
+            >
+              <Typography variant="subtitle1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Typography>
             </Box>
           </Box>
-          
-
         </Box>
 
         <Box
@@ -148,7 +156,6 @@ const Programs = () => {
             transition: "transform .5s",
             ":hover": {
               transform: "scale(1.05)",
-
             },
           }}
         >
@@ -174,6 +181,9 @@ const Programs = () => {
                 transform: "translate(-50%, -50%)",
                 fontFamily: '"Saira Semi Condensed"',
               },
+              div : {
+                visibility: "hidden",
+              },
               ":hover": {
                 img: {
                   transform: { lg: "scale(1.25)" },
@@ -182,11 +192,39 @@ const Programs = () => {
                 h2: {
                   visibility: "hidden",
                 },
+                div : {
+                  visibility: "visible",
+                },
               },
             }}
           >
             <Box component="img" alt="Logo" src={images.elite} />
             <Typography variant="h2">Elite</Typography>
+            <Box
+              component="div"
+              sx={{
+                h6: {
+                  color: "#fff",
+                  position: "absolute",
+                  width: "100%",
+                  top: "50%",
+                  px: {xs : 2, sm : 2,md : 2, lg : 7},
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  fontFamily: '"Saira Semi Condensed"',
+                },
+              }}
+            >
+              <Typography variant="subtitle1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Typography>
+            </Box>
           </Box>
         </Box>
         <Box
@@ -208,8 +246,6 @@ const Programs = () => {
             textAlign: "center",
             transition: "transform .5s",
             ":hover": {
-  
-
               transform: "scale(1.05)",
             },
           }}
@@ -236,6 +272,9 @@ const Programs = () => {
                 transform: "translate(-50%, -50%)",
                 fontFamily: '"Saira Semi Condensed"',
               },
+              div : {
+                visibility: "hidden",
+              },
               ":hover": {
                 img: {
                   transform: { lg: "scale(1.25)" },
@@ -244,11 +283,39 @@ const Programs = () => {
                 h2: {
                   visibility: "hidden",
                 },
+                div : {
+                  visibility: "visible",
+                },
               },
             }}
           >
             <Box component="img" alt="Logo" src={images.international} />
             <Typography variant="h2">International</Typography>
+            <Box
+              component="div"
+              sx={{
+                h6: {
+                  color: "#fff",
+                  position: "absolute",
+                  width: "100%",
+                  top: "50%",
+                  px: {xs : 2, sm : 2,md : 2, lg : 7},
+                  left: '50%',
+                  transform: "translate(-50%, -50%)",
+                  fontFamily: '"Saira Semi Condensed"',
+                },
+              }}
+            >
+              <Typography variant="subtitle1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Typography>
+            </Box>
           </Box>
         </Box>
       </Box>
