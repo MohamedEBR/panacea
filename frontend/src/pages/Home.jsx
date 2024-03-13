@@ -4,7 +4,13 @@ import Typography from "@mui/material/Typography";
 import images from "../constants/images";
 import Button from "@mui/material/Button";
 import SportsMartialArtsSharpIcon from "@mui/icons-material/SportsMartialArtsSharp";
-import { About, Programs, Instructors, Contact } from "../components/Home";
+import {
+  About,
+  Programs,
+  Instructors,
+  Contact,
+  Pricing,
+} from "../components/Home";
 import { CustomBox } from "../components/shared/CustomBox";
 
 const Home = () => {
@@ -145,17 +151,28 @@ const Home = () => {
             my: 10,
             boxShadow: 3,
             display: "flex",
-            flexDirection: "row",
-            justifyContent: "start",
+            flexDirection: {
+              xs: "column",
+              sm: "column",
+              md: "column",
+              lg: "row",
+            },
+            justifyContent: "center",
             alignItems: "center",
-            textAlign: {xs : "center", sm : "center", md: "center", lg : "start"},
+            textAlign: {
+              xs: "center",
+              sm: "center",
+              md: "center",
+              lg: "start",
+            },
           }}
         >
           <Box
             component="div"
             sx={{
-              width: "65%",
-              mr : 8,
+              width: { xs: "100%", sm: "100%", md: "100%", lg: "65%" },
+              mr: { lg: 8 },
+              mb: 2,
             }}
           >
             <Typography
@@ -209,7 +226,7 @@ const Home = () => {
           <Box
             component="img"
             sx={{
-              width: "20%",
+              width: { xs: "30%", sm: "30%", md: "20%", lg: "20%" },
               height: "auto",
               boxShadow: 5,
               borderRadius: "50%",
@@ -219,6 +236,7 @@ const Home = () => {
           />
         </CustomBox>
         <Instructors />
+        <Pricing />
         <Contact />
       </Box>
     </Fragment>
