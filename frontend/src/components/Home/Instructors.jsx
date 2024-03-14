@@ -48,8 +48,8 @@ const Instructors = () => {
           sx={{
             width: { xs: "100%", sm: "100%", md: "60%", lg: "50%" },
             height: "500px",
-            objectFit: "none",
-            objectPosition: "center",
+            objectFit: "cover",
+            objectPosition: "50% 35%",
             position: "relative",
             mb: { xs: 5, sm: 5, md: 5, lg: 0 },
             borderRadius: " 0% 0% 0% 0% / 0% 0% 0% 0%",
@@ -62,7 +62,7 @@ const Instructors = () => {
             },
           }}
           alt="Logo"
-          src={images.karimNats2medals}
+          src={images.Amr}
         />
         <Box
           component="div"
@@ -129,8 +129,8 @@ const Instructors = () => {
           sx={{
             width: { xs: "100%", sm: "100%", md: "60%", lg: "50%" },
             height: "500px",
-            objectFit: "none",
-            objectPosition: "center",
+            objectFit: "cover",
+            objectPosition: "50% 35%",
             position: "relative",
             borderRadius: "0% 0% 0% 0% / 0% 0% 0% 0%",
             boxShadow: "20px 20px rgba(0,0,0,.15)",
@@ -143,7 +143,7 @@ const Instructors = () => {
             },
           }}
           alt="Logo"
-          src={images.karimNats2medals}
+          src={images.Karim}
         />
         <Box
           component="div"
@@ -198,7 +198,7 @@ const Instructors = () => {
         <Box
           component="img"
           sx={{
-            width: { xs: "100%", sm: "100%", md: "60%", lg: "50%" },
+            width: { xs: "100%", sm: "65%", md: "50%", lg: "35%" },
             height: "500px",
             objectFit: "none",
             objectPosition: "center",
@@ -214,7 +214,7 @@ const Instructors = () => {
             },
           }}
           alt="Logo"
-          src={images.karimNats2medals}
+          src={images.Mohamed}
         />
         <Box
           component="div"

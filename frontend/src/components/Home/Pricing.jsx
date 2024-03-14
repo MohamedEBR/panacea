@@ -60,7 +60,8 @@ export default function Pricing() {
             xs: "repeat(auto-fill, minmax(275px, 1fr))",
             sm: "repeat(auto-fill, minmax(275px, 1fr))",
             md: "repeat(auto-fill, minmax(300px, 1fr))",
-            lg :"repeat(auto-fill, minmax(350px, 1fr))"}, // Adjust min-width as needed
+            lg: "repeat(auto-fill, minmax(350px, 1fr))",
+          }, // Adjust min-width as needed
           justifyContent: "space-between",
           alignItems: "center",
           gap: 2,
@@ -112,21 +113,25 @@ export default function Pricing() {
           <Divider inset="none" />
           <CardActions>
             <Typography
-              variant="h6"
-              sx={{ fontFamily: '"Saira Semi Condensed"', mr: "auto" }}
+              variant="h4"
+              sx={{
+                fontFamily: '"Saira Semi Condensed"',
+                mr: "auto",
+                width: "100%",
+                textAlign: {
+                  xs: "center",
+                  sm: "center",
+                  md: "start",
+                  lg: "start",
+                },
+                color: "#9d4f4b",
+              }}
             >
               $85{" "}
               <Typography variant="body2" color="text.secondary">
                 / month
               </Typography>
             </Typography>
-            <Button
-              variant="soft"
-              color="neutral"
-              endIcon={<KeyboardArrowRight />}
-            >
-              Start now
-            </Button>
           </CardActions>
         </Card>
         <Card
@@ -134,7 +139,6 @@ export default function Pricing() {
           variant="outlined"
           sx={{
             mx: 2,
-            
           }}
         >
           <Chip size="sm" variant="outlined" color="neutral">
@@ -176,21 +180,25 @@ export default function Pricing() {
           <Divider inset="none" />
           <CardActions>
             <Typography
-              variant="h6"
-              sx={{ fontFamily: '"Saira Semi Condensed"', mr: "auto" }}
+              variant="h4"
+              sx={{
+                fontFamily: '"Saira Semi Condensed"',
+                mr: "auto",
+                width: "100%",
+                textAlign: {
+                  xs: "center",
+                  sm: "center",
+                  md: "start",
+                  lg: "start",
+                },
+                color: "#9d4f4b",
+              }}
             >
               $105{" "}
               <Typography variant="body2" color="text.secondary">
                 / month
               </Typography>
             </Typography>
-            <Button
-              variant="soft"
-              color="neutral"
-              endIcon={<KeyboardArrowRight />}
-            >
-              Start now
-            </Button>
           </CardActions>
         </Card>
         <Card
@@ -198,7 +206,6 @@ export default function Pricing() {
           variant="outlined"
           sx={{
             mx: 2,
-            
           }}
         >
           <Chip size="sm" variant="outlined" color="neutral">
@@ -240,21 +247,25 @@ export default function Pricing() {
           <Divider inset="none" />
           <CardActions>
             <Typography
-              variant="h6"
-              sx={{ fontFamily: '"Saira Semi Condensed"', mr: "auto" }}
+              variant="h4"
+              sx={{
+                fontFamily: '"Saira Semi Condensed"',
+                mr: "auto",
+                width: "100%",
+                textAlign: {
+                  xs: "center",
+                  sm: "center",
+                  md: "start",
+                  lg: "start",
+                },
+                color: "#9d4f4b",
+              }}
             >
               $150{" "}
               <Typography variant="body2" color="text.secondary">
                 / month
               </Typography>
             </Typography>
-            <Button
-              variant="soft"
-              color="neutral"
-              endIcon={<KeyboardArrowRight />}
-            >
-              Start now
-            </Button>
           </CardActions>
         </Card>
         <Card
@@ -262,7 +273,6 @@ export default function Pricing() {
           variant="outlined"
           sx={{
             mx: 2,
-            
           }}
         >
           <Chip size="sm" variant="outlined" color="neutral">
@@ -304,21 +314,25 @@ export default function Pricing() {
           <Divider inset="none" />
           <CardActions>
             <Typography
-              variant="h6"
-              sx={{ fontFamily: '"Saira Semi Condensed"', mr: "auto" }}
+              variant="h4"
+              sx={{
+                fontFamily: '"Saira Semi Condensed"',
+                mr: "auto",
+                width: "100%",
+                textAlign: {
+                  xs: "center",
+                  sm: "center",
+                  md: "start",
+                  lg: "start",
+                },
+                color: "#9d4f4b",
+              }}
             >
               $250{" "}
               <Typography variant="body2" color="text.secondary">
                 / month
               </Typography>
             </Typography>
-            <Button
-              variant="soft"
-              color="neutral"
-              endIcon={<KeyboardArrowRight />}
-            >
-              Start now
-            </Button>
           </CardActions>
         </Card>
       </Box>

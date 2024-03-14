@@ -230,6 +230,7 @@ const Home = () => {
               height: "auto",
               boxShadow: 5,
               borderRadius: "50%",
+              mb: 2,
             }}
             alt="logo"
             src={images.logo_white}
