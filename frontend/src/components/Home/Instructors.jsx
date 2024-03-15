@@ -1,6 +1,8 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import images from "../../constants/images";
+import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 const Instructors = () => {
   return (
@@ -192,7 +194,7 @@ const Instructors = () => {
           },
           justifyContent: "space-between",
           alignItems: { xs: "center", sm: "center", md: "center", lg: "start" },
-          mb: 20,
+          mb: 10,
         }}
       >
         <Box
@@ -254,6 +256,41 @@ const Instructors = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </Typography>
         </Box>
+      </Box>
+      <Box
+      sx={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}>
+      <Link to="/about">
+        <Button
+          variant="contained"
+          size="medium"
+          sx={{
+            mt: 3,
+            width: { sm: "150px", md: "200px" },
+            height: { xs: "40px", sm: "50px", md: "60px" },
+            borderRadius: 0,
+            backgroundColor: "#9d4f4b",
+            ":hover": {
+              backgroundColor: "#fff",
+              color: "#9d4f4b",
+            },
+          }}
+        >
+          <Typography
+            variant="h6"
+            sx={{
+              fontFamily: '"Saira Semi Condensed"',
+              fontWeight: 500,
+            }}
+          >
+            Learn more
+          </Typography>
+        </Button>
+      </Link>
       </Box>
     </Box>
   );

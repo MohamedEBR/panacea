@@ -4,14 +4,9 @@ import Typography from "@mui/material/Typography";
 import images from "../constants/images";
 import Button from "@mui/material/Button";
 import SportsMartialArtsSharpIcon from "@mui/icons-material/SportsMartialArtsSharp";
-import {
-  About,
-  Programs,
-  Instructors,
-  Contact,
-  Pricing,
-} from "../components/Home";
+import { About, Programs, Instructors, Pricing } from "../components/Home";
 import { CustomBox } from "../components/shared/CustomBox";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -75,7 +70,7 @@ const Home = () => {
                 Learn self-defense and gain confidence, all within a welcoming
                 and supportive environment.
               </Typography>
-
+              <Link to="/contact">
               <Button
                 variant="contained"
                 size="large"
@@ -102,6 +97,8 @@ const Home = () => {
                   Get Started
                 </Typography>
               </Button>
+              </Link>
+              
             </Box>
           </Box>
         </Box>
@@ -238,7 +235,59 @@ const Home = () => {
         </CustomBox>
         <Instructors />
         <Pricing />
-        <Contact />
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            p: "3% 7%",
+            mt: 2,
+          }}
+        >
+          <Box>
+            
+          </Box>
+          <Typography
+            variant="h2"
+            sx={{
+              fontFamily: '"Saira Semi Condensed"',
+              fontWeight: 500,
+              mb: 3,
+            }}
+          >
+            Start your journey today!
+          </Typography>
+          <Link to="/contact">
+            <Button
+              variant="contained"
+              size="medium"
+              sx={{
+                my: 3,
+                width: { sm: "150px", md: "200px" },
+                height: { xs: "40px", sm: "50px", md: "60px" },
+                borderRadius: 0,
+                backgroundColor: "#9d4f4b",
+                color: "#fff",
+                ":hover": {
+                  backgroundColor: "#fff",
+                  color: "#9d4f4b",
+                },
+              }}
+            >
+              <Typography
+                variant="h6"
+                sx={{
+                  fontFamily: '"Saira Semi Condensed"',
+                  fontWeight: 500,
+                }}
+              >
+                Join Now
+              </Typography>
+            </Button>
+          </Link>
+        </Box>
       </Box>
     </Fragment>
   );
