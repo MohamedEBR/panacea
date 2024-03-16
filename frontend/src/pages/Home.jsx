@@ -133,7 +133,7 @@ const Home = () => {
         component="div"
         sx={{
           width: "100%",
-          py: 5,
+          pt: 5,
           display: "flex",
           flexDirection: "column",
           backgroundColor: "white",
@@ -243,18 +243,16 @@ const Home = () => {
             alignItems: "center",
             flexDirection: "column",
             p: "3% 7%",
-            mt: 2,
+            mb: 4,
           }}
         >
-          <Box>
-            
-          </Box>
           <Typography
             variant="h2"
             sx={{
               fontFamily: '"Saira Semi Condensed"',
               fontWeight: 500,
               mb: 3,
+              textAlign: "center",
             }}
           >
             Start your journey today!

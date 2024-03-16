@@ -1,11 +1,13 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/shared/Header'
+import Footer from './components/shared/Footer';
 import './App.css'
 import { Home, About, Contact, Programs, Error } from './pages';
+import { Fragment } from 'react';
 function App() {
 
   return (
-    <div>
+    <Fragment>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -14,7 +16,8 @@ function App() {
         <Route path="/programs" element={<Programs />} />
         <Route path="*" element={<Error />} />
       </Routes>
-    </div>
+      <Footer />
+    </Fragment>
   )
 }
 

@@ -10,12 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-free": "^6.5.1",
     "@mui/icons-material": "^5.15.11",
     "@mui/joy": "^5.0.0-beta.31",
     "@mui/material": "^5.15.11",
     "@tsparticles/react": "^3.0.0",
+    "emailjs-com": "^3.2.0",
     "mdb-react-ui-kit": "^7.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
