@@ -6,16 +6,13 @@ import { CardActionArea } from "@mui/material";
 
 export default function AboutCard(prop) {
   return (
-    <Card sx={{
-         width: '350px',
-          }}>
+    <Card >
       <CardActionArea
     >
         <CardMedia
           component="img"
           image={prop.image}
           alt="Offers"
-          height="300px"
 
         />
         <CardContent

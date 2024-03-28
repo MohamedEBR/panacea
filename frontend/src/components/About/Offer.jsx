@@ -10,19 +10,28 @@ const Mission = () => {
         flexDirection: "column",
         width: "100%",
         mb: 10,
+        textAlign: {
+            xs: "center",
+            sm: "center",
+            md: "center",
+            lg: "start",
+          },
       }}
     >
-      <Box>
         <Typography
           variant="h6"
           sx={{
             fontFamily: '"Saira Semi Condensed"',
             color: "#9d4f4b",
             mb: 5,
+            
           }}
         >
           What We Offer
         </Typography>
+      <Box 
+      >
+
       </Box>
       <Box
         sx={{
@@ -46,12 +55,12 @@ const Mission = () => {
         <AboutCard
           title="Boosted Confidence"
           description="We teach Shotokan karate, emphasizing proper technique, discipline, and respect."
-          image={images.professional}
+          image={images.confidence}
         />
         <AboutCard
           title="Fun and Rewards"
           description="We teach Shotokan karate, emphasizing proper technique, discipline, and respect."
-          image={images.professional}
+          image={images.fun}
         />
       </Box>
     </Box>
