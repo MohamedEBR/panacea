@@ -4,11 +4,18 @@ import Typography from "@mui/material/Typography";
 import images from "../constants/images";
 import Button from "@mui/material/Button";
 import SportsMartialArtsSharpIcon from "@mui/icons-material/SportsMartialArtsSharp";
-import { About, Programs, Instructors, Pricing } from "../components/Home";
+import { About, Programs, Instructors, Pricing, Testimonials } from "../components/Home";
 import { CustomBox } from "../components/shared/CustomBox";
 import { Link } from "react-router-dom";
+import { saveAs } from "file-saver";
+
 
 const Home = () => {
+  const handleClick = () => {
+    let url = images.schedule;
+    saveAs(url, "panacea-schedule");
+  };
+
   return (
     <Fragment>
       <Box
@@ -196,6 +203,7 @@ const Home = () => {
             <Button
               variant="contained"
               size="medium"
+              onClick={handleClick}
               sx={{
                 my: 3,
                 width: { sm: "150px", md: "200px" },
@@ -235,6 +243,7 @@ const Home = () => {
         </CustomBox>
         <Instructors />
         <Pricing />
+        {/* <Testimonials /> */}
         <Box
           sx={{
             width: "100%",
