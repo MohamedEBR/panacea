@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import images from "../constants/images";
 import Button from "@mui/material/Button";
 import SportsMartialArtsSharpIcon from "@mui/icons-material/SportsMartialArtsSharp";
-import { About, Programs, Instructors, Pricing, Testimonials } from "../components/Home";
+import { About, Programs, Instructors, Pricing } from "../components/Home";
 import { CustomBox } from "../components/shared/CustomBox";
 import { Link } from "react-router-dom";
 import { saveAs } from "file-saver";

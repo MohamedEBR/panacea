@@ -9,7 +9,7 @@ import Mohamed from "../assets/Mohamed.jpg"
 import Amr from "../assets/AmrIbraheem.jpg"
 import Karim from "../assets/Karim.jpg"
 import schedule from "../assets/PANCEA_SCHEDULE.png"
-
+import professional from "../assets/Professional.png"
 export default {
   Logo,
   banner,
@@ -21,5 +21,6 @@ export default {
   Mohamed,
   Amr,
   Karim,
-  schedule
+  schedule,
+  professional
 };
