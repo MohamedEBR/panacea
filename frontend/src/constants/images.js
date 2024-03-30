@@ -12,6 +12,11 @@ import schedule from "../assets/PANCEA_SCHEDULE.png"
 import professional from "../assets/Professional.png"
 import confidence from "../assets/Confidence.png"
 import fun from "../assets/Fun.png"
+import programBeginner from '../assets/programBeginner.png'
+import programIntermediate from '../assets/programIntermediate.png'
+import programElite from '../assets/athlete.jpg'
+import programBeginnerChild from '../assets/beginnerChild.png'
+import whiteBelt from '../assets/whiteBelt.png'
 
 export default {
   Logo,
@@ -27,5 +32,10 @@ export default {
   schedule,
   professional,
   confidence,
-  fun
+  programBeginner,
+  programIntermediate,
+  programElite,
+  programBeginnerChild,
+  fun,
+  whiteBelt,
 };

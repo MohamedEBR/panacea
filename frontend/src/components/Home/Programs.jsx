@@ -77,7 +77,7 @@ const Programs = () => {
                 objectFit: "cover",
                 objectPosition: "center",
                 position: "relative",
-                filter: "brightness(50%)",
+                filter: "brightness(75%)",
                 right: { md: 0, lg: "10%" },
                 transition: "transform 7s ease-in-out",
               },
@@ -96,7 +96,7 @@ const Programs = () => {
               ":hover": {
                 img: {
                   transform: { lg: "scale(1.25)" },
-                  filter: "brightness(20%)",
+                  filter: "brightness(40%)",
                 },
                 h2: {
                   visibility: "hidden",
@@ -107,7 +107,7 @@ const Programs = () => {
               },
             }}
           >
-            <Box component="img" alt="Logo" src={images.beginner} />
+            <Box component="img" alt="Logo" src={images.whiteBelt} />
             <Typography variant="h2">Beginner</Typography>
             <Box
               component="div"
@@ -125,13 +125,7 @@ const Programs = () => {
               }}
             >
               <Typography variant="subtitle1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Kickstart your karate journey! Our Beginner program is the ideal entry point for kids and teens of all backgrounds. No prior experience is necessary! In this supportive environment, you'll learn fundamental techniques like strikes, blocks, and stances under the guidance of experienced instructors. We'll not only build your physical strength and flexibility, but also cultivate focus, discipline, and a sense of accomplishment. This program is a fantastic way to boost your fitness, gain valuable self-defense skills, and discover the empowering world of karate!
               </Typography>
             </Box>
           </Box>
@@ -170,7 +164,7 @@ const Programs = () => {
                 objectFit: "cover",
                 objectPosition: "center",
                 position: "relative",
-                filter: "brightness(50%)",
+                filter: "brightness(75%)",
                 right: { md: 0, lg: "20%" },
                 transition: "transform 7s ease-in-out",
               },
@@ -189,7 +183,7 @@ const Programs = () => {
               ":hover": {
                 img: {
                   transform: { lg: "scale(1.25)" },
-                  filter: "brightness(20%)",
+                  filter: "brightness(40%)",
                 },
                 h2: {
                   visibility: "hidden",
@@ -200,8 +194,8 @@ const Programs = () => {
               },
             }}
           >
-            <Box component="img" alt="Logo" src={images.elite} />
-            <Typography variant="h2">Elite</Typography>
+            <Box component="img" alt="Logo" src={images.beginner} />
+            <Typography variant="h2">Intermediate</Typography>
             <Box
               component="div"
               sx={{
@@ -218,13 +212,7 @@ const Programs = () => {
               }}
             >
               <Typography variant="subtitle1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Take your karate to the next level! Our Intermediate program refines your technique for power and precision, focusing on advanced strikes, blocks, and footwork. You'll also spar competitively and delve deeper into traditional forms (katas). This program prepares you to compete in Karate Ontario's recreational tournaments and become a well-rounded, confident martial artist.
               </Typography>
             </Box>
           </Box>
@@ -261,7 +249,7 @@ const Programs = () => {
                 objectFit: "cover",
                 objectPosition: "center",
                 position: "relative",
-                filter: "brightness(50%)",
+                filter: "brightness(75%)",
                 right: { md: 0, lg: "30%" },
                 transition: "transform 7s ease-in-out",
               },
@@ -280,7 +268,7 @@ const Programs = () => {
               ":hover": {
                 img: {
                   transform: { lg: "scale(1.25)" },
-                  filter: "brightness(20%)",
+                  filter: "brightness(40%)",
                 },
                 h2: {
                   visibility: "hidden",
@@ -291,8 +279,8 @@ const Programs = () => {
               },
             }}
           >
-            <Box component="img" alt="Logo" src={images.international} />
-            <Typography variant="h2">International</Typography>
+            <Box component="img" alt="Logo" src={images.elite} />
+            <Typography variant="h2">Elite</Typography>
             <Box
               component="div"
               sx={{
@@ -309,13 +297,7 @@ const Programs = () => {
               }}
             >
               <Typography variant="subtitle1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Take your karate aspirations to the next level with our Elite program! Designed for dedicated athletes hungry for competition glory, this program pushes your limits like never before. We'll hone your technique to razor sharpness, focusing on advanced sparring strategies, explosive power delivery, and unwavering mental focus. Training intensifies as you refine your kata mastery, all in preparation for dominating Karate Ontario's elite provincial tournaments and ultimately, vying for national recognition at the Canada Karate Nationals. Are you ready to step onto the big stage and become an elite karate champion?
               </Typography>
             </Box>
           </Box>
