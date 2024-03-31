@@ -1,4 +1,3 @@
-import * as React from "react";
 import Box from "@mui/joy/Box";
 import Card from "@mui/joy/Card";
 import CardActions from "@mui/joy/CardActions";
@@ -73,7 +72,7 @@ export default function Pricing() {
           }}
         >
           <Chip size="sm" variant="outlined" color="neutral">
-            B
+            Junior
           </Chip>
           <Typography
             variant="h3"
@@ -93,19 +92,19 @@ export default function Pricing() {
               <ListItemDecorator>
                 <Check />
               </ListItemDecorator>
-              Financial Analytics
+              Fun and Games
             </ListItem>
             <ListItem>
               <ListItemDecorator>
                 <Check />
               </ListItemDecorator>
-              Checking Account
+              Basic Techniques
             </ListItem>
             <ListItem>
               <ListItemDecorator>
                 <Check />
               </ListItemDecorator>
-              API Integration
+              Forms (Katas)
             </ListItem>
           </List>
           <Divider inset="none" />
@@ -140,7 +139,7 @@ export default function Pricing() {
           }}
         >
           <Chip size="sm" variant="outlined" color="neutral">
-            A
+            Basic
           </Chip>
           <Typography
             variant="h3"
@@ -154,25 +153,25 @@ export default function Pricing() {
               <ListItemDecorator>
                 <Check />
               </ListItemDecorator>
-              2 hr/week
+              4 hr/week
             </ListItem>
             <ListItem>
               <ListItemDecorator>
                 <Check />
               </ListItemDecorator>
-              Financial Analytics
+              Basic Techniques
             </ListItem>
             <ListItem>
               <ListItemDecorator>
                 <Check />
               </ListItemDecorator>
-              Checking Account
+              Forms (Katas)
             </ListItem>
             <ListItem>
               <ListItemDecorator>
                 <Check />
               </ListItemDecorator>
-              API Integration
+              Goal Setting
             </ListItem>
           </List>
           <Divider inset="none" />
@@ -213,7 +212,7 @@ export default function Pricing() {
             variant="h3"
             sx={{ fontFamily: '"Saira Semi Condensed"' }}
           >
-            Elite
+            Intermediate
           </Typography>
           <Divider inset="none" />
           <List size="sm" sx={{ mx: "calc(-1 * var(--ListItem-paddingX))" }}>
@@ -221,25 +220,25 @@ export default function Pricing() {
               <ListItemDecorator>
                 <Check />
               </ListItemDecorator>
-              2 hr/week
+              8 hr/week
             </ListItem>
             <ListItem>
               <ListItemDecorator>
                 <Check />
               </ListItemDecorator>
-              Financial Analytics
+              Advanced Techniques
             </ListItem>
             <ListItem>
               <ListItemDecorator>
                 <Check />
               </ListItemDecorator>
-              Checking Account
+              Competitions
             </ListItem>
             <ListItem>
               <ListItemDecorator>
                 <Check />
               </ListItemDecorator>
-              API Integration
+              Sparring/Combat Training
             </ListItem>
           </List>
           <Divider inset="none" />
@@ -280,7 +279,7 @@ export default function Pricing() {
             variant="h3"
             sx={{ fontFamily: '"Saira Semi Condensed"' }}
           >
-            International
+            Elite
           </Typography>
           <Divider inset="none" />
           <List size="sm" sx={{ mx: "calc(-1 * var(--ListItem-paddingX))" }}>
@@ -288,25 +287,25 @@ export default function Pricing() {
               <ListItemDecorator>
                 <Check />
               </ListItemDecorator>
-              2 hr/week
+              11 hr/week
             </ListItem>
             <ListItem>
               <ListItemDecorator>
                 <Check />
               </ListItemDecorator>
-              Financial Analytics
+             National Competitions
             </ListItem>
             <ListItem>
               <ListItemDecorator>
                 <Check />
               </ListItemDecorator>
-              Checking Account
+              Training Camps
             </ListItem>
             <ListItem>
               <ListItemDecorator>
                 <Check />
               </ListItemDecorator>
-              API Integration
+              Travel Opportunities
             </ListItem>
           </List>
           <Divider inset="none" />

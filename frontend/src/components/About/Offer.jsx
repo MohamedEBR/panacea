@@ -49,17 +49,17 @@ const Mission = () => {
       >
         <AboutCard
           title="Professional Karate Instruction"
-          description="We teach Shotokan karate, emphasizing proper technique, discipline, and respect."
+          description="Led by certified coaches, our professional instruction focuses on proper technique, discipline, and personal growth in a supportive environment."
           image={images.professional}
         />
         <AboutCard
           title="Boosted Confidence"
-          description="We teach Shotokan karate, emphasizing proper technique, discipline, and respect."
+          description=" Our professional instructors go beyond teaching technique. They create a supportive environment where students of all ages develop not only physical skills but also self-belief and confidence.  Through a structured curriculum and positive reinforcement, you'll gain the skills and self-assurance to excel both on and off the mat."
           image={images.confidence}
         />
         <AboutCard
           title="Fun and Rewards"
-          description="We teach Shotokan karate, emphasizing proper technique, discipline, and respect."
+          description="Our expert instructors make learning fun and rewarding. Earn awesome rewards as you progress through competitions, all while building confidence and fitness in a supportive environment."
           image={images.fun}
         />
       </Box>

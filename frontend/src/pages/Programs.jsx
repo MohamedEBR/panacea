@@ -1,12 +1,17 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import { ProgramBody} from "../components/Programs";
+import { ProgramBody } from "../components/Programs";
 import { CustomBox } from "../components/shared/CustomBox";
-
-import {Link} from 'react-router-dom'
-import Button from '@mui/material/Button'
+import images from "../constants/images";
+import { Link } from "react-router-dom";
+import Button from "@mui/material/Button";
+import { saveAs } from "file-saver";
 
 const Programs = () => {
+  const handleClick = () => {
+    let url = images.schedule;
+    saveAs(url, "panacea-schedule");
+  };
   return (
     <Box
       component="div"
@@ -71,10 +76,103 @@ const Programs = () => {
             fontFamily: '"Saira Semi Condensed"',
           }}
         >
-         From beginner to black belt, our karate programs offer a path for everyone. Explore self-defense, fitness, and personal growth in a supportive environment.
+          From beginner to black belt, our karate programs offer a path for
+          everyone. Explore self-defense, fitness, and personal growth in a
+          supportive environment.
         </Typography>
       </CustomBox>
       <ProgramBody />
+      <CustomBox
+        sx={{
+          p: "3% 7%",
+          my: 10,
+          boxShadow: 3,
+          display: "flex",
+          flexDirection: {
+            xs: "column",
+            sm: "column",
+            md: "column",
+            lg: "row",
+          },
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: {
+            xs: "center",
+            sm: "center",
+            md: "center",
+            lg: "start",
+          },
+        }}
+      >
+        <Box
+          component="div"
+          sx={{
+            width: { xs: "100%", sm: "100%", md: "100%", lg: "65%" },
+            mr: { lg: 8 },
+            mb: 2,
+          }}
+        >
+          <Typography
+            variant="h6"
+            sx={{
+              fontFamily: '"Saira Semi Condensed"',
+              color: "#fff",
+              my: 3,
+            }}
+          >
+            Class Schedule
+          </Typography>
+          <Typography
+            variant="h4"
+            sx={{
+              my: 3,
+              width: "100%",
+            }}
+          >
+            Kickstart your fitness journey in high gear! Sample a variety of
+            martial arts this week and discover the perfect fit for your goals.
+          </Typography>
+          <Button
+            variant="contained"
+            size="medium"
+            onClick={handleClick}
+            sx={{
+              my: 3,
+              width: { sm: "150px", md: "200px" },
+              height: { xs: "40px", sm: "50px", md: "60px" },
+              borderRadius: 0,
+              backgroundColor: "#fff",
+              color: "#9d4f4b",
+              ":hover": {
+                backgroundColor: "#9d4f4b",
+                color: "#fff",
+              },
+            }}
+          >
+            <Typography
+              variant="h6"
+              sx={{
+                fontFamily: '"Saira Semi Condensed"',
+                fontWeight: 500,
+              }}
+            >
+              Schedule
+            </Typography>
+          </Button>
+        </Box>
+        <Box
+          component="img"
+          sx={{
+            width: { xs: "30%", sm: "30%", md: "20%", lg: "20%" },
+            height: "auto",
+            boxShadow: 5,
+            borderRadius: "50%",
+            mb: 2,
+          }}
+          alt="logo"
+          src={images.logo_white}
+        />
+      </CustomBox>
       <Box
         sx={{
           width: "100%",
@@ -92,7 +190,6 @@ const Programs = () => {
           px: "7%",
         }}
       >
-       
         <Box
           sx={{
             width: "100%",
@@ -146,7 +243,7 @@ const Programs = () => {
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default Programs
+export default Programs;

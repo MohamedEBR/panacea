@@ -2,7 +2,6 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import images from "../../constants/images";
 
-
 const Instructors = () => {
   return (
     <Box
@@ -94,13 +93,13 @@ const Instructors = () => {
               width: "100%",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Sensei Amr Ibraheem, World Karate Federation Accredited Coach since
+            2020, believes that learning karate should be a fun and rewarding
+            journey. He fosters a positive and engaging environment where
+            students are encouraged to explore their potential and celebrate
+            their progress. His passion lies in helping individuals of all ages
+            discover the path to personal growth and achievement through the
+            discipline of karate.
           </Typography>
         </Box>
       </Box>
@@ -170,13 +169,14 @@ const Instructors = () => {
               width: "100%",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Sensei Ebraheem Karim, a member of the prestigious National Team of
+            Canada and the Karate Ontario team, Sensei Karim boasts an
+            impressive competitive history. He's not only a champion, claiming
+            first place in Canada's Junior, U21, and Senior divisions, but also
+            a world-class competitor currently ranked 26th globally in his
+            weight class. Driven and ambitious, Sensei Karim inspires students
+            with his dedication and relentless pursuit of excellence, aiming to
+            reach the coveted number one spot on the world stage.
           </Typography>
         </Box>
       </Box>
@@ -245,13 +245,15 @@ const Instructors = () => {
               width: "100%",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Sensei Ebraheem Mohamed, a dominant force in Ontario tournaments,
+            Sensei Mohamed consistently claims first-place finishes,
+            demonstrating his exceptional skills. But his ambitions don't stop
+            there. This year, he sets his sights even higher, aiming to excel at
+            Canada's Nationals and make a significant impact at the prestigious
+            Pan American competitions. Sensei Mohamed's dedication and
+            competitive spirit are sure to inspire students who share his
+            passion for pushing their limits. (Member of the Karate Ontario
+            team)
           </Typography>
         </Box>
       </Box>
