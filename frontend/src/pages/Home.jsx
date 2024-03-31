@@ -8,7 +8,7 @@ import { About, Programs, Instructors, Pricing } from "../components/Home";
 import { CustomBox } from "../components/shared/CustomBox";
 import { Link } from "react-router-dom";
 import { saveAs } from "file-saver";
-
+import { motion } from "framer-motion";
 
 const Home = () => {
   const handleClick = () => {
@@ -18,124 +18,141 @@ const Home = () => {
 
   return (
     <Fragment>
-      <Box
-        sx={{
-          flexGrow: 1,
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          width: "100%",
-          height: { xs: "100%", sm: "100%", md: "90vh", lg: "669px" },
-          overflow: "hidden",
-          mb: 10,
-        }}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, ease: 'easeInOut' }}
       >
         <Box
           sx={{
-            backgroundColor: "white",
-            width: { sm: "100%", md: "400px", lg: "500px" },
+            flexGrow: 1,
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            width: "100%",
+            height: { xs: "100%", sm: "100%", md: "90vh", lg: "669px" },
+            overflow: "hidden",
+            mb: 10,
           }}
         >
           <Box
             sx={{
               backgroundColor: "white",
-              transform: { sm: "none", md: "skew(-20deg)" },
-              width: { md: "355px", lg: "455px" },
-              height: "100%",
-              ml: { xs: 8, sm: 8, md: 35 },
+              width: { sm: "100%", md: "400px", lg: "500px" },
             }}
           >
             <Box
               sx={{
-                position: { md: "absolute" },
-                transform: { sm: "none", md: "skew(20deg)" },
-                textAlign: "start",
-                // backgroundColor: "white",
-                width: { sm: "100%", md: "600px" },
-                left: { md: "-240px", lg: "-175px" },
-                top: { md: "20%" },
+                backgroundColor: "white",
+                transform: { sm: "none", md: "skew(-20deg)" },
+                width: { md: "355px", lg: "455px" },
+                height: "100%",
+                ml: { xs: 8, sm: 8, md: 35 },
               }}
             >
-              <Typography
-                variant="h2"
+              <Box
                 sx={{
-                  fontFamily: '"Saira Semi Condensed"',
-                  fontWeight: 700,
-                  pt: { xs: 10, sm: 5, md: 5, lg: 5 },
+                  position: { md: "absolute" },
+                  transform: { sm: "none", md: "skew(20deg)" },
+                  textAlign: "start",
+                  // backgroundColor: "white",
+                  width: { sm: "100%", md: "600px" },
+                  left: { md: "-240px", lg: "-175px" },
+                  top: { md: "20%" },
                 }}
               >
-                Build Inner Strength and Confidence
-              </Typography>
-              <Typography
-                variant="h5"
-                sx={{
-                  fontFamily: '"Saira Semi Condensed"',
-                  pt: 2,
-                  width: "80%",
-                }}
-              >
-                Learn self-defense and gain confidence, all within a welcoming
-                and supportive environment.
-              </Typography>
-              <Link to="/contact">
-              <Button
-                variant="contained"
-                size="large"
-                startIcon={<SportsMartialArtsSharpIcon />}
-                sx={{
-                  mt: 3,
-                  width: { sm: "200px", md: "250px" },
-                  height: { xs: "50px", sm: "60px", md: "75px" },
-                  borderRadius: 0,
-                  backgroundColor: "#9d4f4b",
-                  ":hover": {
-                    backgroundColor: "#fff",
-                    color: "#9d4f4b",
-                  },
-                }}
-              >
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontFamily: '"Saira Semi Condensed"',
-                    fontWeight: 500,
-                  }}
+                <motion.div
+                  initial={{ opacity: 0, x: -20, y: 20 }}
+                  animate={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{ duration: 1 }}
                 >
-                  Get Started
-                </Typography>
-              </Button>
-              </Link>
-              
+                  <Typography
+                    variant="h2"
+                    sx={{
+                      fontFamily: '"Saira Semi Condensed"',
+                      fontWeight: 700,
+                      pt: { xs: 10, sm: 5, md: 5, lg: 5 },
+                    }}
+                  >
+                    Build Inner Strength and Confidence
+                  </Typography>
+                  <Typography
+                    variant="h5"
+                    sx={{
+                      fontFamily: '"Saira Semi Condensed"',
+                      pt: 2,
+                      width: "80%",
+                    }}
+                  >
+                    Learn self-defense and gain confidence, all within a
+                    welcoming and supportive environment.
+                  </Typography>
+                  <Link to="/contact">
+                    <Button
+                      variant="contained"
+                      size="large"
+                      startIcon={<SportsMartialArtsSharpIcon />}
+                      sx={{
+                        mt: 3,
+                        width: { sm: "200px", md: "250px" },
+                        height: { xs: "50px", sm: "60px", md: "75px" },
+                        borderRadius: 0,
+                        backgroundColor: "#9d4f4b",
+                        ":hover": {
+                          backgroundColor: "#fff",
+                          color: "#9d4f4b",
+                        },
+                      }}
+                    >
+                      <Typography
+                        variant="h6"
+                        sx={{
+                          fontFamily: '"Saira Semi Condensed"',
+                          fontWeight: 500,
+                        }}
+                      >
+                        Get Started
+                      </Typography>
+                    </Button>
+                  </Link>
+                </motion.div>
+              </Box>
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              width: { xs: "0px", sm: "0px", md: "60%" },
+              zIndex: -2,
+              display: { xs: "none", sm: "none", md: "block" },
+            }}
+          >
+            <Box
+              component="div"
+              sx={{
+                flexGrow: 1,
+              }}
+            >
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.5 }}
+              >
+                <Box
+                  component="img"
+                  sx={{
+                    height: { xs: 0, sm: 0, md: "669px" },
+                    zIndex: -2,
+                    objectFit: "cover",
+                    objectPosition: "50% 100%",
+                  }}
+                  alt="Logo"
+                  src={images.banner}
+                />
+              </motion.div>
             </Box>
           </Box>
         </Box>
-        <Box
-          sx={{
-            width: { xs: "0px", sm: "0px", md: "60%" },
-            zIndex: -2,
-            display: { xs: "none", sm: "none", md: "block" },
-          }}
-        >
-          <Box
-            component="div"
-            sx={{
-              flexGrow: 1,
-            }}
-          >
-            <Box
-              component="img"
-              sx={{
-                height: { xs: 0, sm: 0, md: "669px" },
-                zIndex: -2,
-                objectFit: "cover",
-                objectPosition: "50% 100%",
-              }}
-              alt="Logo"
-              src={images.banner}
-            />
-          </Box>
-        </Box>
-      </Box>
+      </motion.div>
       <Box
         component="div"
         sx={{
@@ -147,8 +164,24 @@ const Home = () => {
           overflow: "hidden",
         }}
       >
-        <About />
-        <Programs />
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: 'easeInOut' }}
+        >
+          <About />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: 'easeInOut' }}
+        >
+          <Programs />
+        </motion.div>
+        <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: 'easeInOut' }}>
         <CustomBox
           sx={{
             p: "3% 7%",
@@ -241,10 +274,26 @@ const Home = () => {
             src={images.logo_white}
           />
         </CustomBox>
+        </motion.div>
+        <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: 'easeInOut' }}>
         <Instructors />
+
+        </motion.div>
+        <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: 'easeInOut' }}>
         <Pricing />
-        {/* <Testimonials /> */}
-        <Box
+
+        </motion.div>
+        <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: 'easeInOut' }}>
+   <Box
           sx={{
             width: "100%",
             display: "flex",
@@ -295,6 +344,9 @@ const Home = () => {
             </Button>
           </Link>
         </Box>
+        </motion.div>
+        {/* <Testimonials /> */}
+     
       </Box>
     </Fragment>
   );

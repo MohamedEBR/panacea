@@ -3,6 +3,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import images from "../../constants/images";
 import {Link} from "react-router-dom";
+import {motion} from 'framer-motion'
 
 import "./index.scss";
 const About = () => {
@@ -20,6 +21,8 @@ const About = () => {
         px: "7%",
       }}
     >
+     
+
       <Box
         component="div"
         sx={{
@@ -30,6 +33,11 @@ const About = () => {
           alignItems: {xs : "center", sm : "center", md :"start"},
           width: "100%",
         }}
+      >
+         <motion.div
+      initial={{x: -20}}
+      whileInView={{x: 0}}
+      transition={{ease : 'easeInOut', duration: 0.5}}
       >
         <Typography
           variant="h6"
@@ -96,8 +104,9 @@ const About = () => {
           </Typography>
         </Button>
         </Link>
-       
+        </motion.div>
       </Box>
+
       <Box
         sx={{
           width: {xs: "100%", sm: "100%", md :"80%"},
@@ -105,6 +114,11 @@ const About = () => {
           pt: 5,
         }}
       >
+        <motion.div
+         initial={{x: 20}}
+         whileInView={{x: 0}}
+         transition={{ease : 'easeInOut', duration: 0.5}}>
+
         <Box
           component="img"
           sx={{
@@ -124,6 +138,8 @@ const About = () => {
           alt="Logo"
           src={images.karimNats2medals}
         />
+        </motion.div>
+
       </Box>
     </Box>
   );

@@ -5,6 +5,7 @@ import { CustomBox } from "../components/shared/CustomBox";
 
 import {Link} from 'react-router-dom'
 import Button from '@mui/material/Button'
+import {motion} from 'framer-motion'
 const About = () => {
   return (
     <Box
@@ -19,6 +20,8 @@ const About = () => {
         py: "3%",
       }}
     >
+     
+
       <Box
         component="div"
         sx={{
@@ -37,6 +40,10 @@ const About = () => {
           px: "7%",
         }}
       >
+         <motion.div
+      initial={{opacity: 0, x: -20}}
+      whileInView={{opacity: 1, x: 0}}
+      transition={{ease:'backInOut', duration:1}}>
         <Typography
           variant="h2"
           sx={{
@@ -46,7 +53,12 @@ const About = () => {
         >
           About Us
         </Typography>
+      </motion.div>
       </Box>
+      <motion.div
+      initial={{opacity: 0, x: -20}}
+      whileInView={{opacity: 1, x: 0}}
+      transition={{ease:'backInOut', duration:1}}>
       <CustomBox
         sx={{
           width: "100%",
@@ -64,6 +76,7 @@ const About = () => {
           px: "7%",
         }}
       >
+
         <Typography
           variant="h4"
           sx={{
@@ -75,6 +88,8 @@ const About = () => {
           committed to helping them develop new skills and build confidence.
         </Typography>
       </CustomBox>
+      </motion.div>
+
       <Box
         sx={{
           width: "100%",
@@ -95,9 +110,30 @@ const About = () => {
           },
         }}
       >
+         <motion.div
+      initial={{opacity: 0, x: -20}}
+      whileInView={{opacity: 1, x: 0}}
+      transition={{ease:'backInOut', duration:1}}>
         <Mission />
+
+      </motion.div>
+      <motion.div
+      initial={{opacity: 0, x: -20}}
+      whileInView={{opacity: 1, x: 0}}
+      transition={{ease:'backInOut', duration:1}}>
         <Instructors />
-        <Offer />
+
+      </motion.div>
+      <motion.div
+      initial={{opacity: 0, x: -20}}
+      whileInView={{opacity: 1, x: 0}}
+      transition={{ease:'backInOut', duration:1}}>
+                <Offer />
+
+
+      </motion.div>
+   
+      
         <Box
           sx={{
             width: "100%",
@@ -109,7 +145,11 @@ const About = () => {
             mb: 4,
           }}
         >
-          <Typography
+             <motion.div
+      initial={{opacity: 0, x: -20}}
+      whileInView={{opacity: 1, x: 0}}
+      transition={{ease:'backInOut', duration:1}}>
+ <Typography
             variant="h2"
             sx={{
               fontFamily: '"Saira Semi Condensed"',
@@ -120,6 +160,9 @@ const About = () => {
           >
             Start your journey today!
           </Typography>
+
+      </motion.div>
+         
           <Link to="/contact">
             <Button
               variant="contained"

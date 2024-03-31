@@ -6,7 +6,7 @@ import {
   MDBIcon,
   MDBBtn,
 } from "mdb-react-ui-kit";
-
+import {Link} from 'react-router-dom'
 export default function Footer() {
   return (
     <MDBFooter
@@ -91,19 +91,25 @@ export default function Footer() {
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Links</h6>
               <p>
+                <Link to='/about' style={{color: '#fff'}}>
                 <a href="#!" className="text-reset">
                   About
                 </a>
+                </Link>
               </p>
               <p>
+              <Link to='/programs' style={{color: '#fff'}}>
                 <a href="#!" className="text-reset">
                   Programs
                 </a>
+                </Link>
               </p>
               <p>
+              <Link to='/contact' style={{color: '#fff'}}>
                 <a href="#!" className="text-reset">
                   Contact
                 </a>
+                </Link>
               </p>
             </MDBCol>
 

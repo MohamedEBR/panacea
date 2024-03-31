@@ -8,3 +8,6 @@ url("https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;
 body {
   font-family: 'Saira Semi Condensed', sans-serif;
 }
+a {
+  text-decoration: none
+}

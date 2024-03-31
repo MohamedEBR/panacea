@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import {motion} from 'framer-motion'
 
 const ProgramBox = (prop) => {
   return (
@@ -18,6 +19,7 @@ const ProgramBox = (prop) => {
         mb: 20,
       }}
     >
+    
       <Box
         component="img"
         sx={{
@@ -34,6 +36,7 @@ const ProgramBox = (prop) => {
         alt="Logo"
         src={prop.image}
       />
+     
       <Box
         component="div"
         sx={{
