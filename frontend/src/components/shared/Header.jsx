@@ -145,7 +145,7 @@ function Header(props) {
                     alignItems: "center",
                     transform: "skew(-20deg)",
                     backgroundColor: "#fff",
-                    pl: "12%",
+                    pl: {xs: "5%",sm : "7%",md :"12%", lg: "12%"},
                   }}
                 >
                   {/* <Link to="/"> */}
