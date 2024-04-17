@@ -71,6 +71,7 @@ const Home = () => {
                     sx={{
                       fontFamily: '"Saira Semi Condensed"',
                       fontWeight: 700,
+                      pr : {xs:5, sm : 5},
                       pt:5,
                     }}
                   >
