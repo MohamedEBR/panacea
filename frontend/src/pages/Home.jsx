@@ -71,7 +71,7 @@ const Home = () => {
                     sx={{
                       fontFamily: '"Saira Semi Condensed"',
                       fontWeight: 700,
-                      pt: { xs: 10, sm: 5, md: 5, lg: 5 },
+                      pt:5,
                     }}
                   >
                     Build Inner Strength and Confidence

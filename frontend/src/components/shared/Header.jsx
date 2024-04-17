@@ -81,7 +81,10 @@ function Header(props) {
           src={images.Logo}
         />
       </Box>
-      <Typography variant="h6" sx={{ marginBottom: 2, fontWeight: "bold" }}>
+      <Typography variant="h6" sx={{ 
+        marginBottom: 2, 
+        fontWeight: "bold",
+        }}>
         Panacea Karate Academy
       </Typography>
       <Divider />
@@ -176,7 +179,8 @@ function Header(props) {
                         color: "inherit",
                         textDecoration: "none",
                         fontFamily: '"Saira Semi Condensed"',
-                        pl: 3,
+                        pl: {xs :1, sm : 3, md: 3, lg: 3},
+                        fontSize: {xs : '1.25rem'},
                         transform: "skew(20deg)",
                       }}
                     >
@@ -235,7 +239,7 @@ function Header(props) {
                 aria-label="open drawer"
                 edge="start"
                 onClick={handleDrawerToggle}
-                sx={{ mr: "7%", display: { md: "none" } }}
+                sx={{ mr:{xs : "3%", sm :"7%"}, display: { md: "none" } }}
               >
                 <MenuIcon />
               </IconButton>
