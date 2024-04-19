@@ -12,6 +12,12 @@ const app = express();
 
 require("dotenv").config();
 
+
+//view engine setup
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'jade');
+
+
 //DB Section
 const { DBURI, PORT } = process.env;
 
@@ -34,15 +40,23 @@ const db = mongoose.connection
 db.on('error', console.error.bind(console, 'connection error:'))
 
 
+//setup
+app.use(logger('dev'))
+app.use(express.json);
+app.use(express.urlencoded({extended: false}))
+app.use(cookieParser());
+app.use(express.static('public'))
 
 //Routes section
 app.use("/", authRoute)
 app.use("/blogs", blogRoute)
 
 
+//Return the client
+app.get('/blogs*', (_, res) => {
+  res.sendFile(path.join(__dirname, 'public') + '/index.html')
+})
 
-
-// Middles wares
 
 //Catch 404 Error and forward to error Handler
 app.use((req, res, next) => {
@@ -65,8 +79,6 @@ app.listen(PORT, ()=> {
     console.log(`listening on port: ${PORT}`)
 })
 
-app.use(cookieParser());
 
-app.use(express.json());
 
 module.exports = app
