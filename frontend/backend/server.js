@@ -1,24 +1,18 @@
+const createError = require('http-errors');
+const path = require('path')
+const logger = require('morgan');
+const blogRoute = require("./Routes/Blog.js")
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const createError = require('http-errors');
-const path = require('path')
-const cookieParser = require("cookie-parser");
-const logger = require('morgan');
-const authRoute = require("./Routes/AuthRoute.js");
-const blogRoute = require("./Routes/Blog.js")
 
 const app = express();
 
 require("dotenv").config();
 
+const cookieParser = require("cookie-parser");
+const authRoute = require("./Routes/AuthRoute.js");
 
-//view engine setup
-app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'jade');
-
-
-//DB Section
 const { DBURI, PORT } = process.env;
 
 mongoose
@@ -31,34 +25,41 @@ mongoose
 
 app.use(cors({
     origin: "http://localhost:5174",
+    origin: "http://localhost:5173",
     methods: "GET,PUT,POST,DELETE",
     credentials: true,
 }));
 
+
+
+app.listen(PORT, ()=> {
+    console.log(`listening on port: ${PORT}`)
+})
+
+//view engine setup
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'jade');
+
 const db = mongoose.connection
+
 
 db.on('error', console.error.bind(console, 'connection error:'))
 
 
-//setup
 app.use(logger('dev'))
-app.use(express.json);
 app.use(express.urlencoded({extended: false}))
-app.use(cookieParser());
 app.use(express.static('public'))
+app.use(cookieParser());
+app.use(express.json());
 
-//Routes section
 app.use("/", authRoute)
 app.use("/blogs", blogRoute)
 
 
-//Return the client
 app.get('/blogs*', (_, res) => {
   res.sendFile(path.join(__dirname, 'public') + '/index.html')
 })
 
-
-//Catch 404 Error and forward to error Handler
 app.use((req, res, next) => {
   next(createError(404))
 })
@@ -73,12 +74,3 @@ app.use((err, req, res, next) => {
   res.render('error')
 })
 
-
-//Listening PORT
-app.listen(PORT, ()=> {
-    console.log(`listening on port: ${PORT}`)
-})
-
-
-
-module.exports = app

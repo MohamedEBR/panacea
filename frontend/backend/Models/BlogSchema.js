@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
@@ -5,22 +6,29 @@ const Schema = mongoose.Schema;
 const BlogSchema = new Schema({
     title: {
         type: String,
-        required: true
+        required: true,
+        trim: true
     },
     date : {
         type: String,
         required: true,
+        trim: true
+        
     },
     content: {
         type: String,
         required: true,
+        trim: true
+
     },
-    image : {
-        type: Buffer,
-    },
-    contentType : {
+    file_path : {
         type: String,
+      required: true
     },
+    file_mimetype: {
+        type: String,
+        required: true
+      },
     createdAt: {
         type: Date,
         default: Date.now
@@ -29,7 +37,7 @@ const BlogSchema = new Schema({
 
 // Sets the createdAt Parameter equal to the current time
 BlogSchema.pre('save', (next) => {
-    now = new Date();
+    const now = new Date();
 
     if(!this.createdAt) {
         this.createdAt = now;

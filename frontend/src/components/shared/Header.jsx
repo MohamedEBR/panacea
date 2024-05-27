@@ -19,7 +19,7 @@ import Button from "@mui/material/Button";
 import images from "../../constants/images";
 import { Link } from "react-router-dom";
 
-const navItems = ["Home", "About", "Programs", "Contact"];
+const navItems = ["Home", "About", "Programs","Blogs", "Contact", ];
 const drawerWidth = 300;
 
 const returnNavItem = (item) => {

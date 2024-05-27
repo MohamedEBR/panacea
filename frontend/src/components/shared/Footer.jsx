@@ -105,6 +105,13 @@ export default function Footer() {
                 </Link>
               </p>
               <p>
+                <Link to='/blogs' style={{color: '#fff'}}>
+                <a href="#!" className="text-reset">
+                  Blogs
+                </a>
+                </Link>
+              </p>
+              <p>
               <Link to='/contact' style={{color: '#fff'}}>
                 <a href="#!" className="text-reset">
                   Contact
