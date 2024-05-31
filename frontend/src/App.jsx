@@ -19,10 +19,10 @@ function App() {
         <Route path="/programs" element={<Programs />} />
         <Route path="/blogs/" element={<Blogs />} />
         <Route path="/blogs/:id" element={<BlogId />} />
-        <Route path="/blogs/new" element={<CreateBlog />} />
-        <Route path="/blogs/:id/edit" element={<EditBlog />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        {/* <Route path="/blogs/new" element={<CreateBlog />} /> */}
+        {/* <Route path="/blogs/:id/edit" element={<EditBlog />} /> */}
+        {/* <Route path="/login" element={<Login />} /> */}
+        {/* <Route path="/signup" element={<Signup />} /> */}
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

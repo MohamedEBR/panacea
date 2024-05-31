@@ -92,14 +92,14 @@ const BlogId = () => {
           {blog.content}
           </Typography>
         <Typography className="text-secondary mb-5">- {blog.date}</Typography>
-        <div className="mb-5">
+        {/* <div className="mb-5">
           <Link variant="primary" className=" btn btn-primary m-2" to={`/blogs/${blogId}/edit`}>
             Edit
           </Link>
           <Button variant="danger" onClick={deleteBlog}>
             Delete
           </Button>
-        </div>
+        </div> */}
         <Link to="/blogs" style={{ textDecoration: 'none' }}>
           &#8592; Back to Home
         </Link>
