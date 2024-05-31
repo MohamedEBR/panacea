@@ -23,6 +23,9 @@ mongoose
   .then(() => console.log("MongoDB is  connected successfully"))
   .catch((err) => console.error(err));
 
+app.use(cookieParser());
+
+
 app.use(cors({
     origin: "http://localhost:5174",
     origin: "http://localhost:5173",
@@ -49,7 +52,7 @@ db.on('error', console.error.bind(console, 'connection error:'))
 app.use(logger('dev'))
 app.use(express.urlencoded({extended: false}))
 app.use(express.static('public'))
-app.use(cookieParser());
+
 app.use(express.json());
 
 app.use("/", authRoute)
@@ -63,6 +66,7 @@ app.get('/blogs*', (_, res) => {
 app.use((req, res, next) => {
   next(createError(404))
 })
+
 
 //error handler
 app.use((err, req, res, next) => {

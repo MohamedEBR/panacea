@@ -45,6 +45,8 @@ const Programs = () => {
           backgroundColor: "#fff",
         }}
       >
+        {/* <Box> */}
+
         <Box
           component="div"
           sx={{
@@ -65,7 +67,7 @@ const Programs = () => {
             transition: "transform .3s",
 
             ":hover": {
-              transform: "scale(1.05)",
+              transform: {md: "scale(1.05)",lg: "scale(1.05)"},
             },
           }}
         >
@@ -96,14 +98,14 @@ const Programs = () => {
               },
               ":hover": {
                 img: {
-                  transform: { lg: "scale(1.25)" },
-                  filter: "brightness(40%)",
+                  transform: { md: "scale(1.25)",lg: "scale(1.25)" },
+                  filter:{md: "brightness(40%)",lg: "brightness(40%)"},
                 },
                 h2: {
-                  visibility: "hidden",
+                  visibility: {md:"hidden", lg: "hidden"},
                 },
                 div: {
-                  visibility: "visible",
+                  visibility: {md:"visible", lg: "visible"},
                 },
               },
             }}
@@ -144,6 +146,33 @@ const Programs = () => {
               </Box>
           </Box>
         </Box>
+        <Typography variant="subtitle1"
+                 sx={{
+                  
+                    color: "#000",
+                    visibility: {md: "hidden", lg: "hidden"},
+
+                    width: {xs: "100%",sm :"100%", md: 0, lg: 0},
+                    px: { xs: 2, sm: 2, md: 2, lg: 7 },
+                    py: { xs: 5, sm: 5,},
+                    position: {md: "absolute", lg: "absolute"},
+                    zIndex: {md: -1, lg: -1},
+                    fontFamily: '"Saira Semi Condensed"',
+                  
+                }}>
+                  Kickstart your karate journey! Our Beginner program is the
+                  ideal entry point for kids and teens of all backgrounds. No
+                  prior experience is necessary! In this supportive environment,
+                  you'll learn fundamental techniques like strikes, blocks, and
+                  stances under the guidance of experienced instructors. We'll
+                  not only build your physical strength and flexibility, but
+                  also cultivate focus, discipline, and a sense of
+                  accomplishment. This program is a fantastic way to boost your
+                  fitness, gain valuable self-defense skills, and discover the
+                  empowering world of karate!
+                </Typography>
+        {/* </Box> */}
+
 
         <Box
           component="div"
@@ -165,7 +194,7 @@ const Programs = () => {
             textAlign: "center",
             transition: "transform .5s",
             ":hover": {
-              transform: "scale(1.05)",
+              transform: {md:"scale(1.05)", lg: "scale(1.05)"},
             },
           }}
         >
@@ -196,14 +225,14 @@ const Programs = () => {
               },
               ":hover": {
                 img: {
-                  transform: { lg: "scale(1.25)" },
-                  filter: "brightness(40%)",
+                  transform: { md: "scale(1.25)",lg: "scale(1.25)" },
+                  filter:{md: "brightness(40%)",lg: "brightness(40%)"},
                 },
                 h2: {
-                  visibility: "hidden",
+                  visibility: {md:"hidden", lg: "hidden"},
                 },
                 div: {
-                  visibility: "visible",
+                  visibility: {md:"visible", lg: "visible"},
                 },
               },
             }}
@@ -237,6 +266,28 @@ const Programs = () => {
             </Box>
           </Box>
         </Box>
+        <Typography variant="subtitle1"
+                 sx={{
+                  
+                    color: "#000",
+                    visibility: {md: "hidden", lg: "hidden"},
+
+                    width: {xs: "100%",sm :"100%", md: 0, lg: 0},
+                    px: { xs: 2, sm: 2, md: 2, lg: 7 },
+                    py: { xs: 5, sm: 5,},
+                    position: {md: "absolute", lg: "absolute"},
+                    zIndex: {md: -1, lg: -1},
+                    fontFamily: '"Saira Semi Condensed"',
+                  
+                }}>
+                  Take your karate to the next level! Our Intermediate program
+                refines your technique for power and precision, focusing on
+                advanced strikes, blocks, and footwork. You'll also spar
+                competitively and delve deeper into traditional forms (katas).
+                This program prepares you to compete in Karate Ontario's
+                recreational tournaments and become a well-rounded, confident
+                martial artist.
+                </Typography>
         <Box
           component="div"
           sx={{
@@ -256,7 +307,7 @@ const Programs = () => {
             textAlign: "center",
             transition: "transform .5s",
             ":hover": {
-              transform: "scale(1.05)",
+              transform: {md:"scale(1.05)", lg: "scale(1.05)"},
             },
           }}
         >
@@ -287,14 +338,14 @@ const Programs = () => {
               },
               ":hover": {
                 img: {
-                  transform: { lg: "scale(1.25)" },
-                  filter: "brightness(40%)",
+                  transform: { md: "scale(1.25)",lg: "scale(1.25)" },
+                  filter:{md: "brightness(40%)",lg: "brightness(40%)"},
                 },
                 h2: {
-                  visibility: "hidden",
+                  visibility: {md:"hidden", lg: "hidden"},
                 },
                 div: {
-                  visibility: "visible",
+                  visibility: {md:"visible", lg: "visible"},
                 },
               },
             }}
@@ -330,6 +381,28 @@ const Programs = () => {
             </Box>
           </Box>
         </Box>
+        <Typography variant="subtitle1"
+                 sx={{
+                  
+                    color: "#000",
+                    visibility: {md: "hidden", lg: "hidden"},
+
+                    width: {xs: "100%",sm :"100%", md: 0, lg: 0},
+                    px: { xs: 2, sm: 2, md: 2, lg: 7 },
+                    py: { xs: 5, sm: 5,},
+                    position: {md: "absolute", lg: "absolute"},
+                    zIndex: {md: -1, lg: -1},
+                    fontFamily: '"Saira Semi Condensed"',
+                  
+                }}>
+                  Take your karate to the next level! Our Intermediate program
+                refines your technique for power and precision, focusing on
+                advanced strikes, blocks, and footwork. You'll also spar
+                competitively and delve deeper into traditional forms (katas).
+                This program prepares you to compete in Karate Ontario's
+                recreational tournaments and become a well-rounded, confident
+                martial artist.
+                </Typography>
       </Box>
       <Box
         sx={{

@@ -30,7 +30,7 @@ export default function Footer() {
               rippleColor="light"
               color="light"
               size="lg"
-              href="#!"
+              href="https://www.facebook.com/people/Panacea-International-Karate-Academy/100069371208804/"
               role="button"
             >
               <MDBIcon fab icon="facebook-f" />
@@ -43,7 +43,7 @@ export default function Footer() {
               rippleColor="light"
               color="light"
               size="lg"
-              href="#!"
+              href="https://www.google.com/search?q=pancea+karate+acdemy+google&sca_esv=442f0bb1f3fffd8e&sxsrf=ADLYWIIymdIZaOklsGjiEbqtsdmvZJNkBQ%3A1717176374158&source=hp&ei=NghaZpi4B5j10PEPnNKO8AY&iflsig=AL9hbdgAAAAAZloWRqTyp9eahJBmy7apnyqnELLdypBF&ved=0ahUKEwiYq6--tLiGAxWYOjQIHRypA24Q4dUDCA8&uact=5&oq=pancea+karate+acdemy+google&gs_lp=Egdnd3Mtd2l6IhtwYW5jZWEga2FyYXRlIGFjZGVteSBnb29nbGUyBxAhGKABGAoyBxAhGKABGApIvwtQkAVYkAVwAXgAkAEAmAFyoAFyqgEDMC4xuAEDyAEA-AEC-AEBmAICoAKEAagCCsICBxAjGOoCGCeYAwiSBwMxLjGgB5cE&sclient=gws-wiz"
               role="button"
             >
               <MDBIcon fab icon="google" />
