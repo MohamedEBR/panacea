@@ -23,11 +23,7 @@ mongoose
   .then(() => console.log("MongoDB is  connected successfully"))
   .catch((err) => console.error(err));
 
-app.use(cookieParser());
-
-
 app.use(cors({
-    origin: "http://localhost:5174",
     origin: "http://localhost:5173",
     methods: "GET,PUT,POST,DELETE",
     credentials: true,

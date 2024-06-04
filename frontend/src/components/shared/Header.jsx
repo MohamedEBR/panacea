@@ -91,6 +91,12 @@ function Header(props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
+            <Link
+                to={`/${returnNavItem(item).toLocaleLowerCase()}`}
+                style={{ textDecoration: "none", color: "inherit",
+                  width: "100%"
+                 }}
+              >
             <ListItemButton
               sx={{
                 textAlign: "start",
@@ -100,13 +106,11 @@ function Header(props) {
                 },
               }}
             >
-              <Link
-                to={`/${returnNavItem(item).toLocaleLowerCase()}`}
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
+              
                 <ListItemText primary={item} />
-              </Link>
             </ListItemButton>
+            </Link>
+
           </ListItem>
         ))}
       </List>
@@ -200,6 +204,10 @@ function Header(props) {
                 }}
               >
                 {navItems.map((item) => (
+                   <Link
+                   to={`/${returnNavItem(item).toLocaleLowerCase()}`}
+                   style={{ textDecoration: "none", color: "inherit" }}
+                 >
                   <Button
                     key={item}
                     sx={{
@@ -224,14 +232,12 @@ function Header(props) {
                         fontFamily: '"Saira Semi Condensed"',
                       }}
                     >
-                      <Link
-                        to={`/${returnNavItem(item).toLocaleLowerCase()}`}
-                        style={{ textDecoration: "none", color: "inherit" }}
-                      >
+                     
                         {item}
-                      </Link>
                     </Typography>
                   </Button>
+                  </Link>
+
                 ))}
               </Box>
               <IconButton

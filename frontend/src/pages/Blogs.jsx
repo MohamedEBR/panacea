@@ -9,7 +9,7 @@ import { CustomBox } from "../components/shared/CustomBox";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 import images from "../constants/images";
-
+import BlogsBox from '../components/Blogs/BlogsBox';
 // utility function to format the creation date
 import formatDate from '../lib/formatDate'
 import http from '../lib/http'
@@ -116,13 +116,13 @@ const Blogs = () => {
         alignItems: "center",
         justifyContent: "center",
         height: "100%",
-        textAlign: { xs: "center", sm: "center", md: "center", lg: "start" },
+        textAlign: { xs: "center", sm: "center", md: "center", lg: "center" },
         px: "7%",
         my: 5,
       }}>
          
         <List>
-          {blogs.map((blog) => {
+          {/* {blogs.map((blog) => {
             // Map the blogs to JSX
             return (
               <>
@@ -172,7 +172,23 @@ const Blogs = () => {
               <Divider variant="middle" component="li" />
 </>
             )
-          })}
+          })} */}
+
+          <BlogsBox 
+          title="Karim Ebraheem, Youth League Bronze medal at Merida, Mexico 2023"
+          content="This isn't just a win for Karim Ebraheem, it's a giant leap for Panacea Karate Academy!  Karim's bronze medal at the Merida, Mexico 2023 Youth League marks the first time a Panacea student has taken the top spot at an international tournament. This incredible achievement paves the way for future karatekas at our academy, proving that dedication and hard work can lead to success on the world stage. Karim's rise to 26th in the world rankings is an inspiration to us all. Let's use his triumph as a springboard to push our own limits and strive for excellence in everything we do!"
+          date="23/09/2023"
+          image={images.karimMexico} />
+          <BlogsBox 
+          title="Karim Ebraheem, 2 National Gold Medals Senior and Junior, Laval, Quebec 2023"
+          content="Karim didn't just claim one, but two National Gold Medals, dominating both the Senior and Junior divisions. This phenomenal feat marks a monumental achievement for our academy – not only is it our first ever Senior National Gold Medal, but it also secured Karim's well-deserved spot at the 2023 World Championships! This wasn't just a victory, it was an extreme endeavor conquered with unwavering focus and relentless determination. Karim is a true inspiration, proving that dedication and hard work can shatter expectations and propel you to the world stage. Let this double gold medal be a burning torch, igniting a fire within us all to reach for greatness and rewrite the meaning of possible!"
+          date="11/07/2023"
+          image={images.karimNats2medals} />
+           <BlogsBox 
+          title="Karim Ebraheem, National Junior Gold Medal, New Foundland, 2022"
+          content="This National Junior Gold Medal win by Karim in Newfoundland, 2022, is a historic moment for our club. It's the first time a Panacea athlete has claimed gold at a national competition, shattering records and setting a new standard for excellence. This achievement is a testament to the dedication of both the athlete and the entire Panacea family. It proves that with unwavering focus and relentless training, dreams can become reality. Let Karim's gold medal be a beacon of inspiration for all of us. Let's train harder, push our boundaries, and strive to be the next national champion!"
+          date="09/07/2022"
+          image={images.karim2022} />
         </List>
         </Box>
         {/* <motion.div

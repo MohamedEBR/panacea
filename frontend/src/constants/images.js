@@ -17,10 +17,13 @@ import programIntermediate from '../assets/programIntermediate.png'
 import programElite from '../assets/athlete.jpg'
 import programBeginnerChild from '../assets/beginnerChild.png'
 import whiteBelt from '../assets/whiteBelt.png'
-
+import karimMexico from "../assets/KarimMexico.jpg"
+import karim2022 from "../assets/Nats2022.jpg"
 export default {
   Logo,
   banner,
+  karim2022,
+  karimMexico,
   karimNats2medals,
   beginner,
   elite,
