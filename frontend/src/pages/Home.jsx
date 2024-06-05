@@ -289,13 +289,13 @@ const Home = () => {
         <Instructors />
 
         </motion.div>
-        {/* <motion.div
+        <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: 'easeInOut' }}>
         <Pricing />
 
-        </motion.div> */}
+        </motion.div>
         <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}

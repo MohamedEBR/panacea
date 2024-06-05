@@ -1,16 +1,26 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
+import {motion} from "framer-motion"
 
 const Mission = () => {
   return (
+    <motion.div
+      initial={{opacity: 0, x: -20}}
+      whileInView={{opacity: 1, x: 0}}
+      transition={{ease:'backInOut', duration:1}}>
     <Box sx={{
       display: "flex",
-      flexDirection: "column",
+      flexDirection: {xs :"column", sm: "column", md: "column", lg: "row"},
       mb: 10,
     }}>
-<Box>
+
+<Box
+sx={{
+  width: {lg :"50%"},
+  pr:{lg :3}
+}}>
       <Typography
-          variant="h6"
+          variant="h2"
           sx={{
             fontFamily: '"Saira Semi Condensed"',
             color: "#9d4f4b",
@@ -19,22 +29,23 @@ const Mission = () => {
           Vision
         </Typography>
         <Typography
-          variant="subtitle1"
+          variant="h4"
           sx={{
             fontFamily: '"Saira Semi Condensed"',
             pt: 2,
-            fontSize: 20,
             width: "100%",
           }}
         >
-          We envision Panacea Karate Academy as a beacon of self-improvement and personal growth within our community. We see our dojo evolving into a place where students of all ages transform into well-rounded individuals, radiating confidence and a strong sense of self. We aspire to be recognized for fostering a legacy of excellence in karate, not just in physical prowess, but also in the positive impact we have on our students' lives.
+          Empowering individuals to become confident, well-rounded leaders through the transformative power of karate.
         </Typography>
     </Box>
     <Box sx={{
-      mt:4
+      mt:{xs: 4,sm:4, md: 4, lg: 0},
+      width: {lg :"50%"},
+      pr:{lg :3}
     }}>
       <Typography
-          variant="h6"
+          variant="h2"
           sx={{
             fontFamily: '"Saira Semi Condensed"',
             color: "#9d4f4b",
@@ -43,18 +54,17 @@ const Mission = () => {
           Mission
         </Typography>
         <Typography
-          variant="subtitle1"
+          variant="h4"
           sx={{
             fontFamily: '"Saira Semi Condensed"',
             pt: 2,
-            fontSize: 20,
             width: "100%",
           }}
         >
-          Our mission is to empower individuals of all ages and backgrounds through the traditional practice of karate. We strive to cultivate not only physical strength and self-defense skills, but also inner discipline, respect, and a sense of community. By fostering a supportive environment where dedication and perseverance are celebrated, we aim to equip our students with the confidence and resilience to excel both on and off the dojo floor.
-        </Typography>
+We ignite personal growth and cultivate inner strength through traditional karate practice, fostering a supportive community that celebrates excellence on and off the mat.        </Typography>
     </Box>
     </Box>
+    </motion.div>
   )
 }
 

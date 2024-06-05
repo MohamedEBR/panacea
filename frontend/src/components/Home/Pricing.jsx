@@ -9,13 +9,16 @@ import ListItemDecorator from "@mui/joy/ListItemDecorator";
 import Typography from "@mui/material/Typography";
 import Check from "@mui/icons-material/Check";
 import { CustomBox } from "../shared/CustomBox";
+import Button from "@mui/material/Button";
+import {Link} from "react-router-dom"
 
 export default function Pricing() {
   return (
     <CustomBox
       sx={{
         p: "3% 7%",
-        my: 10,
+        mt: 10,
+        
         boxShadow: 3,
         display: "flex",
         flexDirection: "column",
@@ -49,7 +52,46 @@ export default function Pricing() {
       >
         We offer flexible membership plans to suit your needs and budget.
       </Typography>
-      <Box
+      <Typography
+        variant="subtitle1"
+        sx={{
+          fontFamily: '"Saira Semi Condensed"',
+          color: "#fff",
+          mt: 3,
+          mb: 5,
+          fontWeight: 'bold',
+        }}
+      >
+        *Contact for Pricing Information*
+      </Typography>
+      <Link to="/contact">
+            <Button
+              variant="contained"
+              size="medium"
+              sx={{
+                width: { sm: "150px", md: "200px" },
+                height: { xs: "40px", sm: "50px", md: "60px" },
+                borderRadius: 0,
+                backgroundColor: "#fff",
+                color: "#9d4f4b",
+                ":hover": {
+                  backgroundColor: "#9d4f4b",
+                  color: "#fff",
+                },
+              }}
+            >
+              <Typography
+                variant="h6"
+                sx={{
+                  fontFamily: '"Saira Semi Condensed"',
+                  fontWeight: 500,
+                }}
+              >
+                Contact
+              </Typography>
+            </Button>
+          </Link>
+      {/* <Box
         component="div"
         sx={{
           display: "grid",
@@ -63,8 +105,8 @@ export default function Pricing() {
           alignItems: "center",
           gap: 2,
         }}
-      >
-        <Card
+      > */}
+        {/* <Card
           size="lg"
           variant="outlined"
           sx={{
@@ -331,8 +373,8 @@ export default function Pricing() {
               </Typography>
             </Typography>
           </CardActions>
-        </Card>
-      </Box>
+        </Card> */}
+      {/* </Box> */}
      
     </CustomBox>
   );
