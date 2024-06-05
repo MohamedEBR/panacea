@@ -7,7 +7,7 @@ const Mission = () => {
     <motion.div
       initial={{opacity: 0, x: -20}}
       whileInView={{opacity: 1, x: 0}}
-      transition={{ease:'backInOut', duration:1}}>
+      transition={{ease:'backInOut', duration:2}}>
     <Box sx={{
       display: "flex",
       flexDirection: {xs :"column", sm: "column", md: "column", lg: "row"},
