@@ -106,8 +106,7 @@ const Instructors = () => {
                 width: "100%",
               }}
             >
-              Sensei Amr Ibraheem, World Karate Federation Accredited Coach
-              since 2020, believes that learning karate should be a fun and
+              Sensei Amr Ibraheem believes that learning karate should be a fun and
               rewarding journey. He fosters a positive and engaging environment
               where students are encouraged to explore their potential and
               celebrate their progress. His passion lies in helping individuals
