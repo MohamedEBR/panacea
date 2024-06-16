@@ -195,8 +195,7 @@ const Instructors = () => {
               of Canada and the Karate Ontario team, Sensei Karim boasts an
               impressive competitive history. He's not only a champion, claiming
               first place in Canada's Junior, U21, and Senior divisions, but
-              also a world-class competitor currently ranked 26th globally in
-              his weight class. Driven and ambitious, Sensei Karim inspires
+              also a world-class competitor. Driven and ambitious, Sensei Karim inspires
               students with his dedication and relentless pursuit of excellence,
               aiming to reach the coveted number one spot on the world stage.
             </Typography>

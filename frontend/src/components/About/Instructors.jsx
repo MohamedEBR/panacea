@@ -103,8 +103,7 @@ const Instructors = () => {
                 width: "100%",
               }}
             >
-              Sensei Amr Ibraheem, World Karate Federation Accredited Coach
-              since 2020, believes that learning karate should be a fun and
+              Sensei Amr Ibraheem believes that learning karate should be a fun and
               rewarding journey. He fosters a positive and engaging environment
               where students are encouraged to explore their potential and
               celebrate their progress. His passion lies in helping individuals
@@ -193,8 +192,7 @@ const Instructors = () => {
               of Canada and the Karate Ontario team, Sensei Karim boasts an
               impressive competitive history. He's not only a champion, claiming
               first place in Canada's Junior, U21, and Senior divisions, but
-              also a world-class competitor currently ranked 26th globally in
-              his weight class. Driven and ambitious, Sensei Karim inspires
+              also a world-class competitor. Driven and ambitious, Sensei Karim inspires
               students with his dedication and relentless pursuit of excellence,
               aiming to reach the coveted number one spot on the world stage.
             </Typography>
@@ -229,18 +227,18 @@ const Instructors = () => {
           <Box
             component="img"
             sx={{
-              width: { xs: "100%", sm: "65%", md: "50%", lg: "35%" },
+              width: { xs: "100%", sm: "100%", md: "60%", lg: "50%" },
               height: "500px",
-              objectFit: "none",
-              objectPosition: "center",
+              objectFit: "cover",
+              objectPosition: "50% 35%",
               position: "relative",
-              borderRadius: " 0% 0% 0% 0% / 0% 0% 0% 0%",
+              borderRadius: "0% 0% 0% 0% / 0% 0% 0% 0%",
               boxShadow: "20px 20px rgba(0,0,0,.15)",
-              mr: 5,
               mb: { xs: 5, sm: 5, md: 5, lg: 0 },
+              mr: 5,
               transition: "all .4s ease",
               ":hover": {
-                borderRadius: " 0% 0% 50% 50% / 0% 0% 5% 5%",
+                borderRadius: "0% 0% 50% 50% / 0% 0% 5% 5%",
                 boxShadow: "10px 10px rgba(0,0,0,.25)",
               },
             }}
