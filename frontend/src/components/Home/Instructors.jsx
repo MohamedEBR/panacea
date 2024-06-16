@@ -232,7 +232,7 @@ const Instructors = () => {
           <Box
             component="img"
             sx={{
-              width: { xs: "100%", sm: "65%", md: "50%", lg: "35%" },
+              width: { xs: "100%", sm: "100%", md: "60%", lg: "50%" },
               height: "500px",
               objectFit: "none",
               objectPosition: "center",
