@@ -234,16 +234,16 @@ const Instructors = () => {
             sx={{
               width: { xs: "100%", sm: "100%", md: "60%", lg: "50%" },
               height: "500px",
-              objectFit: "none",
-              objectPosition: "center",
+              objectFit: "cover",
+              objectPosition: "50% 35%",
               position: "relative",
-              borderRadius: " 0% 0% 0% 0% / 0% 0% 0% 0%",
+              borderRadius: "0% 0% 0% 0% / 0% 0% 0% 0%",
               boxShadow: "20px 20px rgba(0,0,0,.15)",
-              mr: 5,
               mb: { xs: 5, sm: 5, md: 5, lg: 0 },
+              mr: 5,
               transition: "all .4s ease",
               ":hover": {
-                borderRadius: " 0% 0% 50% 50% / 0% 0% 5% 5%",
+                borderRadius: "0% 0% 50% 50% / 0% 0% 5% 5%",
                 boxShadow: "10px 10px rgba(0,0,0,.25)",
               },
             }}
