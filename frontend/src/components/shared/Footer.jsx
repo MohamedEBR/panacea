@@ -123,22 +123,22 @@ export default function Footer() {
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4 px-0">
               <h6 className="text-uppercase fw-bold mb-4">Working Hours</h6>
               <p>
-                  6pm to 7:30pm Monday
+                  6pm to 7:15pm Monday
               </p>
               <p>
-                  4:30pm to 7:30pm Tuesday
+                  4:30pm to 7:15pm Tuesday
               </p>
               <p>
-                  6pm to 7:30pm Wednesday
+                  6pm to 7:15pm Wednesday
               </p>
               <p>
-                  4:30pm to 7:30pm Thursday
+                  4:30pm to 7:15pm Thursday
               </p>
               <p>
                   9am to 12pm Saturday
               </p>
               <p>
-                  4pm to 7pm Sunday
+                  4:30pm to 7:15pm Sunday
               </p>
             </MDBCol>
 
